@@ -1,224 +1,283 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&display=swap');
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thử Thách 21 Ngày Biến Nội Dung Thành Tiền</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="top-banner">
+        Ghi danh lớp học Ưu đãi Early Bird sẽ kết thúc lúc <span id="countdown">0 ngày 02 giờ 45 phút 10 giây</span>
+    </div>
 
-:root {
-  --bg-color: #09101E; /* Chuyên gia, An toàn (Deep Nền Chính) */
-  --bg-card: #162238; /* Khối màu nổi bật chuẩn ClickFunnels */
-  --bg-card-light: #1E2D4A; /* Màu Section */
-  --color-neon: #F25F22; /* Cam Nóng hừng hực - Thúc đẩy hành động CTA */
-  --color-neon-dim: rgba(242, 95, 34, 0.15);
-  --color-red: #F5A623; /* Vàng Ánh kim điểm nhấn phụ */
-  --color-red-dim: rgba(245, 166, 35, 0.05);
-  --color-white: #F0F4F8; /* Nội dung text siêu rõ nét - Chữ sáng */
-  --color-gray: #9DAECA;
-  --color-gray-dark: #2F4163; /* Khung viền sắc bén */
-}
+    <div class="container">
+        <!-- Logo -->
+        <div class="logo">
+            <span class="logo-icon">\\\</span> CONTENT MASTERY
+        </div>
 
-/* Base resets & typography */
-* { margin: 0; padding: 0; box-sizing: border-box; }
+        <!-- Hero Section -->
+        <header class="hero">
+            <h1>
+                Không Cần Giỏi Viết,<br>
+                <div class="glow-container">
+                    <span class="text-glow-bg">Không Cần Viral</span>
+                </div><br>
+                Hệ Thống Tự Động Mang Tiền Về<br>
+                <span class="text-neon">Chỉ Trong 21 Ngày!</span>
+            </h1>
+            <p class="hero-sub">
+                "Không cần rành công nghệ, không phụ thuộc cảm hứng — chỉ cần làm đủ 21 ngày, hệ thống sẽ lo phần còn lại và tiền tự chảy vào."
+            </p>
+            <div class="mt-m">
+                <a href="#register" class="cta-button">TÔI MUỐN THAM GIA NGAY &rarr;</a>
+            </div>
+        </header>
 
-body {
-  font-family: 'Inter', sans-serif;
-  background-color: var(--bg-color);
-  color: var(--color-white);
-  line-height: 1.6;
-  padding-bottom: 100px;
-}
+        <!-- Section 1 -->
+        <section class="section-center mt-xl">
+            <p class="text-gray text-m">Bạn không phải là người duy nhất gặp tình trạng này. Và nói thẳng:</p>
+            <h2 class="title-large">VẤN ĐỀ <span class="text-neon">KHÔNG PHẢI Ở BẠN</span></h2>
+            
+            <div class="pill-outline">
+                <span class="text-neon">$</span> Sự thật là bạn đang làm sai cách.
+            </div>
+            
+            <div class="arrow-down">↓</div>
 
-/* Lora: Giữ lại độ "Sang" của chuyên gia tuổi 40+ */
-h1, h2, h3, .title-large, .logo {
-  font-family: 'Lora', serif;
-  font-weight: 700;
-  letter-spacing: -0.5px;
-}
+            <div class="grid-2 gap-2 mt-l">
+                <!-- Card Nỗ Lực -->
+                <div class="card dark-card">
+                    <h3>Sự nỗ lực của bạn</h3>
+                    <p class="text-gray mb-s">Bạn không thiếu chăm chỉ, cố gắng hay kiến thức.</p>
+                    <ul class="list-check">
+                        <li>Học cách viết content mỗi ngày</li>
+                        <li>Xem hàng chục video xây kênh</li>
+                        <li>Đăng bài đều đặn một thời gian dài</li>
+                    </ul>
+                </div>
+                <!-- Card Kết Quả -->
+                <div class="card dark-card border-dark-red">
+                    <h3 class="text-red">Nhưng kết quả vẫn vậy</h3>
+                    <p class="text-gray mb-s">Bạn rơi vào vùng trũng của sự cạn kiệt năng lượng.</p>
+                    <div class="metrics">
+                        <div class="metric">
+                            <span class="icon-red pb-xs">👁️‍🗨️</span> 
+                            0 VIEWS
+                        </div>
+                        <div class="metric">
+                            <span class="icon-red pb-xs">💔</span> 
+                            0 LEADS
+                        </div>
+                        <div class="metric">
+                            <span class="icon-red pb-xs">💲</span> 
+                            0 SALES
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-/* Biểu ngữ cảnh báo cực mạnh trên đỉnh web */
-.top-banner {
-  background: linear-gradient(90deg, #F25F22 0%, #F5A623 100%);
-  color: #09101E;
-  text-align: center;
-  padding: 12px 20px;
-  font-weight: 800;
-  font-size: 0.95rem;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-}
+        <!-- Section 3: Giải pháp -->
+        <section class="section-center mt-xl mb-xl">
+            <h2 class="title-large mt-l">Sự thật về người <span class="text-white">có khách đều đặn</span></h2>
+            <p class="text-gray mb-l">Họ không giỏi hơn bạn. Họ chỉ có một <span class="text-neon text-bold uppercase">HỆ THỐNG VẬN HÀNH</span> phía sau.</p>
 
-.container { max-width: 950px; margin: 0 auto; padding: 0 20px; }
+            <div class="grid-3 gap-2">
+                <div class="card text-center card-hover">
+                    <div class="icon-neon mb-s">💬</div>
+                    <p class="text-sm font-semibold">Biết chính xác nên nói gì, làm gì mỗi ngày</p>
+                </div>
+                <div class="card text-center card-hover">
+                    <div class="icon-neon mb-s">👥</div>
+                    <p class="text-sm font-semibold">Biến người xem dạo thành người tin tưởng</p>
+                </div>
+                <div class="card text-center card-hover">
+                    <div class="icon-neon mb-s">💲</div>
+                    <p class="text-sm font-semibold">Tự động chuyển đổi niềm tin ra doanh thu</p>
+                </div>
+            </div>
 
-/* Utils */
-.text-center { text-align: center; }
-.text-neon { color: var(--color-neon); }
-.text-red { color: var(--color-red); }
-.text-gray { color: var(--color-gray); }
-.text-white { color: var(--color-white); }
-.text-small { font-size: 0.85rem; }
-.text-sm { font-size: 0.95rem; }
-.text-m { font-size: 1.1rem; }
-.text-lg { font-size: 1.3rem; }
-.text-xl { font-size: 1.8rem; }
-.uppercase { text-transform: uppercase; }
-.text-bold { font-weight: 700; }
-.bold-800 { font-weight: 800; }
-.font-semibold { font-weight: 600; }
+            <div class="arrow-down mt-l mb-l">↓</div>
+            
+            <div class="grand-box">
+                <p class="text-gray text-m">Khi có hệ thống này, bạn không cần "cố nghĩ content" mỗi tối.</p>
+                <p class="text-gray text-m">Bạn không còn phụ thuộc vào cảm hứng để ra đơn.</p>
+                <p class="text-gray text-m">Không phải học thêm. Không phải làm nhiều hơn.</p>
+                
+                <h3 class="mt-l text-white text-lg font-semibold">Đó là thứ bạn sẽ xây trong 21 ngày tới:</h3>
+                <h2 class="text-neon text-xl uppercase mt-xs mb-l bold-800">Hệ thống thu hút khách hàng đều đặn, tự động và lặp lại.</h2>
 
-.mt-xs { margin-top: 10px; } .mt-s { margin-top: 20px; } .mt-m { margin-top: 30px; } .mt-l { margin-top: 50px; } .mt-xl { margin-top: 80px; }
-.mb-xs { margin-bottom: 10px; } .mb-s { margin-bottom: 20px; } .mb-m { margin-bottom: 30px; } .mb-l { margin-bottom: 50px; } .mb-xl { margin-bottom: 80px; }
-.pb-xs { padding-bottom: 5px; }
+                <a href="#register" class="cta-button">ĐĂNG KÝ THAM GIA THỬ THÁCH NGAY!</a>
+                <p class="text-small text-gray mt-m">(Số lượng giới hạn: Chỉ nhận học viên cam kết hành động)</p>
+            </div>
+        </section>
+    </div>
 
-.logo { text-align: center; padding: 40px 0 20px 0; font-weight: 800; letter-spacing: 2px; color: var(--color-white); font-size: 1.3rem; }
-.logo-icon { color: var(--color-neon); font-weight: 900; margin-right: 5px; }
+    <!-- Section 4: Sự thay đổi đáng kinh ngạc (Light Theme) -->
+    <div class="bg-white">
+        <div class="container">
+            <section class="section-center py-xl">
+                <h2 class="title-large text-dark">SỰ THAY ĐỔI <span class="text-gray-light">ĐÁNG KINH NGẠC</span></h2>
+                <p class="text-gray-dark text-m mb-xl max-w-700">Đừng chỉ nhìn vào con số, hãy nhìn vào cách cuộc chơi của bạn thay đổi hoàn toàn sau 21 ngày thiết lập hệ thống.</p>
+                
+                <div class="before-after-grid">
+                    <!-- Before Card -->
+                    <div class="card bg-white-card border-gray relative-card">
+                        <div class="badge-overlap badge-gray">TRƯỚC KHI THAM GIA</div>
+                        <ul class="list-cross mt-m">
+                            <li><strong>Đăng bài đều</strong>, views có, nhưng 0 đơn hàng — không biết tại sao.</li>
+                            <li><strong>Mất hàng giờ</strong> nặn ý tưởng mỗi ngày, kiệt sức mà không ra tiền.</li>
+                            <li>Dùng AI viết bài nhưng content <strong>vô hồn, công nghiệp</strong>, không ai mua.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="arrows-green">»</div>
+                    
+                    <!-- After Card -->
+                    <div class="card bg-green-light border-green relative-card">
+                        <div class="badge-overlap badge-green">SAU 21 NGÀY THỰC CHIẾN</div>
+                        <ul class="list-check-green mt-m">
+                            <li>Có ngay <span class="bg-highlight-green">hệ thống content + phễu + offer</span> — mỗi bài đăng có mục tiêu bán hàng cụ thể.</li>
+                            <li>Dùng AI đúng cách: <span class="underline-green">viết nhanh gấp 10</span>, vẫn ra bài chuyển đổi cao.</li>
+                            <li>Xây kênh cá nhân monetize dài hạn — không phụ thuộc viral, không cần chờ cảm hứng.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
 
-.hero { text-align: center; padding: 10px 0 60px 0; }
-.hero h1 { font-size: 3.5rem; font-weight: 800; line-height: 1.25; margin-bottom: 30px; }
+    <!-- Section 5: Lộ trình thực hành -->
+    <div class="container">
+        <section class="section-center mt-xl mb-xl">
+            <h2 class="title-large uppercase">LỘ TRÌNH THỰC HÀNH</h2>
+            <p class="text-gray mb-xl text-center max-w-700 text-m">Quy trình 3 giai đoạn tối giản, đi thẳng vào thực chiến giúp bạn thiết lập, vận hành và thu lợi nhuận <span class="text-neon text-bold">ngay trong 21 ngày</span>.</p>
 
-/* The hot gradient background behind important text */
-.glow-container { display: inline-block; margin: 5px 0; }
-.text-glow-bg {
-  background: linear-gradient(135deg, #F25F22 0%, #F5A623 100%);
-  color: #09101E; /* Chữ xám tối màu trên nền cam sáng -> Cảnh báo cực bốc */
-  padding: 0px 20px;
-  border-radius: 8px;
-  box-shadow: 0 5px 25px rgba(242, 95, 34, 0.4);
-  display: inline-block;
-  font-weight: 800;
-  transform: rotate(-1.5deg); 
-}
+            <div class="grid-3 gap-2 roadmap-grid">
+                <!-- Card 1 -->
+                <div class="card dark-card roadmap-custom">
+                    <div class="roadmap-num">01</div>
+                    <p class="text-gray text-small tracking-wide mb-xs mt-m uppercase">BÀI 01 - 03</p>
+                    <h3 class="mb-s">Nền Tảng Vững Chắc</h3>
+                    <p class="text-gray text-small mb-m line-h-16">Cấu hình đúng chuẩn ngay từ đầu để AI phân phối nội dung của bạn đến chính xác khách hàng có tiền.</p>
+                    <ul class="list-lightning">
+                        <li><span class="text-neon">⚡</span> <strong>Định vị:</strong> Tìm ra "long mạch" & xây dựng ngách độc bản.</li>
+                        <li><span class="text-neon">⚡</span> <strong>Tối ưu SEO:</strong> Cấu hình kênh chuẩn thuật toán đa nền tảng.</li>
+                        <li><span class="text-neon">⚡</span> <strong>Mồi câu:</strong> Thiết kế mồi câu thu hút khách hàng tiềm năng.</li>
+                    </ul>
+                </div>
+                <!-- Card 2 -->
+                <div class="card dark-card roadmap-custom">
+                    <div class="roadmap-num">02</div>
+                    <p class="text-gray text-small tracking-wide mb-xs mt-m uppercase">BÀI 04 - 10</p>
+                    <h3 class="mb-s">Content & Traffic</h3>
+                    <p class="text-gray text-small mb-m line-h-16">Tự động hóa hoàn toàn khâu kịch bản, chỉnh sửa và đăng tải để giải phóng sức lao động của bạn.</p>
+                    <ul class="list-lightning">
+                        <li><span class="text-neon">⚡</span> <strong>Ma trận AI:</strong> Prompt viết kịch bản video viral tự động.</li>
+                        <li><span class="text-neon">⚡</span> <strong>Dựng nhàn hạ:</strong> Edit video & tạo giọng đọc AI chuyên nghiệp.</li>
+                        <li><span class="text-neon">⚡</span> <strong>Phủ sóng:</strong> Kéo Free Traffic liên tục trên đa nền tảng.</li>
+                    </ul>
+                </div>
+                <!-- Card 3 -->
+                <div class="card dark-card roadmap-custom">
+                    <div class="roadmap-num">03</div>
+                    <p class="text-gray text-small tracking-wide mb-xs mt-m uppercase">BÀI 11 - 16</p>
+                    <h3 class="mb-s">Chuyển Đổi Doanh Thu</h3>
+                    <p class="text-gray text-small mb-m line-h-16">Thiết lập cỗ máy chốt sale âm thầm, biến mọi lượt view ảo thành doanh thu thật chảy vào tài khoản.</p>
+                    <ul class="list-lightning">
+                        <li><span class="text-neon">⚡</span> <strong>Kể chuyện:</strong> Kịch bản Storytelling lồng ghép chốt sale.</li>
+                        <li><span class="text-neon">⚡</span> <strong>Hệ thống phễu:</strong> Tự động điều hướng Follower mua hàng.</li>
+                        <li><span class="text-neon">⚡</span> <strong>Đo lường:</strong> Đọc chỉ số, tối ưu tỷ lệ chuyển đổi & nhân bản.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-.hero-sub { color: var(--color-gray); font-size: 1.15rem; font-weight: 500; font-style: italic; max-width: 750px; margin: 0 auto; line-height: 1.7; }
-.section-center { display: flex; flex-direction: column; align-items: center; text-align: center; }
-.title-large { font-size: 2.8rem; font-weight: 800; line-height: 1.2; margin: 10px 0 20px 0; text-shadow: 0 2px 10px rgba(0,0,0,0.5);}
+        <!-- Section 6: Chương trình này sẽ thay đổi... -->
+        <section class="section-center mt-xl mb-xl">
+            <h2 class="title-large text-center mb-xs uppercase line-tight">CHƯƠNG TRÌNH NÀY SẼ THAY ĐỔI<br><span class="text-neon">CÁCH MÀ BẠN ĐANG LÀM VIỆC</span></h2>
+            <p class="text-gray text-center max-w-800 mb-xl text-m">Không chỉ là một chương trình, đây là "bệ phóng" cung cấp cho bạn mọi tài nguyên, công cụ, kiến thức và sự đồng hành để giúp bạn xây kênh 1 cách bền vững trong 21 ngày tới.</p>
 
-.pill-outline { display: inline-flex; align-items: center; gap: 15px; padding: 12px 30px; border-radius: 40px; border: 2px solid var(--color-red); color: var(--color-red); font-weight: 700; background: var(--bg-card-light); margin-top: 20px; font-size: 1.1rem; }
-.arrow-down { font-size: 24px; color: var(--color-neon); margin-top: 40px; font-weight: 900;}
+            <!-- Feature 1 -->
+            <div class="feature-row mb-xl">
+                <div class="feature-content text-left">
+                    <div class="feature-number relative-num">01</div>
+                    <h3 class="feature-title">05 BUỔI ZOOM CHIẾN LƯỢC</h3>
+                    <p class="text-gray mb-m text-m">Nhận chuyển giao chiến lược "Ma trận nội dung AI" độc quyền trực tiếp từ đội ngũ chuyên gia trong hành trình 21 ngày.</p>
+                    <ul class="list-check-green-dark">
+                        <li><strong>Tư duy chuẩn:</strong> Hiểu rõ nhân hiệu & phễu bán tự động.</li>
+                        <li><strong>Chiến lược:</strong> Cách đi tắt đón đầu thống lĩnh ngách.</li>
+                        <li><strong>Cá nhân hóa:</strong> Trực tiếp giải đáp & định hướng lộ trình riêng.</li>
+                    </ul>
+                </div>
+                <div class="feature-image">
+                    <img src="https://images.unsplash.com/photo-1609921212029-bb5a28e60960?w=800&q=80" alt="Zoom Chiến Lược" style="width: 100%; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); object-fit: cover; aspect-ratio: 4/3;">
+                </div>
+            </div>
+            
+            <!-- Feature 2 -->
+            <div class="feature-row reverse mb-xl">
+                 <div class="feature-image">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=80" alt="Thực Hành Nhóm" style="width: 100%; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); object-fit: cover; aspect-ratio: 4/3;">
+                </div>
+                <div class="feature-content text-left">
+                    <div class="feature-number relative-num">02</div>
+                    <h3 class="feature-title">16 BUỔI ZOOM THỰC HÀNH</h3>
+                    <p class="text-gray mb-m text-m">Không bỏ rơi bạn với mớ lý thuyết suông. Chúng ta sẽ cùng nhau mở máy, thực hành (1h/buổi) trong suốt 21 ngày và ra kết quả ngay lập tức.</p>
+                    <ul class="list-check-green-dark">
+                        <li><strong>Cầm tay chỉ việc:</strong> Từng thao tác sử dụng công cụ AI.</li>
+                        <li><strong>Thực hành:</strong> Hướng dẫn học viên từng bước qua Zoom.</li>
+                        <li><strong>Sửa lỗi tại chỗ:</strong> Đảm bảo bám sát và hoàn thành tiến độ.</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Feature 3 -->
+            <div class="feature-row mb-xl">
+                <div class="feature-content text-left">
+                    <div class="feature-number relative-num">03</div>
+                    <h3 class="feature-title">100 NGÀY HỖ TRỢ 1:1</h3>
+                    <p class="text-gray mb-m text-m">Sau 21 ngày thực chiến, bạn vẫn có một đội ngũ chuyên gia hậu thuẫn phía sau trong suốt hơn 3 tháng tiếp theo.</p>
+                    <ul class="list-check-green-dark">
+                        <li><strong>Hỗ trợ 1:1:</strong> Qua tin nhắn bất cứ khi nào gặp khó khăn.</li>
+                        <li><strong>Review định kỳ:</strong> Chỉnh sửa bài tập sau mỗi buổi thực hành.</li>
+                        <li><strong>Update liên tục:</strong> Thuật toán & tính năng nền tảng AI mới nhất.</li>
+                    </ul>
+                </div>
+                <div class="feature-image">
+                    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&q=80" alt="Support 1:1" style="width: 100%; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); object-fit: cover; aspect-ratio: 4/3;">
+                </div>
+            </div>
 
-.grid-2 { display: grid; grid-template-columns: 1fr 1fr; width: 100%; }
-.grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); width: 100%; }
-.gap-2 { gap: 24px; }
+        <!-- Section: Bảng Giá Bỏ Cọc & Nhận Messenger -->
+        <section id="register" class="section-center py-xl mt-xl mb-xl card dark-card border-neon relative-card" style="max-width: 800px; margin-left: auto; margin-right: auto; padding-top: 40px; padding-bottom: 40px;">
+            <div class="badge-overlap badge-green" style="font-size: 1.2rem; top: -18px;">CHỈ DÀNH CHO NGƯỜI CAM KẾT</div>
+            <h2 class="title-large text-center mb-m uppercase line-tight" style="font-size: 2.8rem; margin-top: 20px;">
+                ĐẦU TƯ VÀO BẢN THÂN
+            </h2>
+            
+            <div class="price-box text-center mb-l">
+                <p class="text-gray text-m mb-xs">Giá trị khóa học:</p>
+                <div style="text-decoration: line-through; color: #888; font-size: 2rem; margin-bottom: 15px;">10.000.000 đ</div>
+                <p class="text-neon text-bold" style="font-size: 1.2rem; margin-bottom: 5px;"> PHÍ:</p>
+                <div class="text-neon text-bold" style="font-size: 4.5rem; text-shadow: 0 0 20px rgba(234,179,8,0.4); line-height: 1; letter-spacing: 2px;">MIỄN PHÍ</div>
+            </div>
 
-.card { background: var(--bg-card); border: 1px solid var(--color-gray-dark); border-radius: 12px; padding: 35px 30px; text-align: left; box-shadow: 0 10px 30px rgba(0,0,0,0.4); }
-.card-hover { transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease; }
-.card-hover:hover { transform: translateY(-8px); border-color: var(--color-neon); box-shadow: 0 15px 35px rgba(242, 95, 34, 0.2); }
-.dark-card h3 { font-size: 1.5rem; margin-bottom: 15px; font-weight: 700; color: var(--color-white); }
+            <p class="text-gray text-center max-w-700 mb-l text-m" style="font-style: italic; font-size: 1.2rem; margin-top: 30px; padding: 0 20px;">
+                "Đừng để đối thủ bỏ xa bạn trong kỷ nguyên AI. Sở hữu ngay toàn bộ hệ thống chiến lược và công cụ tự động hóa."
+            </p>
 
-.list-check { list-style: none; margin-top: 30px; }
-.list-check li { margin-bottom: 16px; position: relative; padding-left: 35px; color: var(--color-gray); font-weight: 500; }
-.list-check li::before { content: '✓'; position: absolute; left: 0; color: var(--color-neon); font-weight: 900; font-size: 1.1rem;}
+            <!-- 👉👉👉 NÚT MESSENGER TẠM THỜI CHỜ BẠN CẬP NHẬT LINK -->
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeVtvIs-6XXT5D4EQP53OCz-YFI-Zn5YpEgX0LrwjBpZc3iJA/viewform?usp=header" class="cta-button flex-center" target="_blank" style="gap: 15px; padding: 20px 40px; font-size: 1.5rem; border-radius: 12px; margin-top: 25px; margin-bottom: 20px; margin-left: auto; margin-right: auto; max-width:100%; width:fit-content; background: #0084FF; color: white; border: none; font-weight: 800; text-transform: uppercase; box-shadow: 0 10px 30px rgba(0, 132, 255, 0.4);">
+               ĐIỀN FORM GIỮ CHỖ <span style="font-size: 1.8rem;">&rarr;</span>
+            </a>
+            <p class="text-small text-gray text-center px-s">((Nhấn nút  để điền thông tin giữ chỗ)</p>
+        </section>
+    </div>
 
-.border-dark-red { border: 1px solid rgba(245, 166, 35, 0.3); background: var(--color-red-dim); }
-
-.metrics { display: flex; gap: 15px; margin-top: 40px; justify-content: space-between; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 30px; }
-.metric { text-align: center; font-size: 0.9rem; font-weight: 800; color: var(--color-red); display: flex; flex-direction: column; align-items: center; gap: 8px; letter-spacing: 1px; }
-
-.icon-red { font-size: 28px; }
-.icon-neon { font-size: 36px; color: var(--color-neon); }
-
-.efforts-list { background: var(--bg-card); border-radius: 16px; border: 1px solid var(--color-gray-dark); padding: 40px; width: 100%; }
-.effort-header { text-align: center; color: var(--color-gray); font-size: 0.85rem; letter-spacing: 1px; margin-bottom: 30px; font-weight: 600; }
-.effort-bar-wrapper { margin-bottom: 40px; }
-.effort-bar { display: flex; height: 38px; border-radius: 20px; overflow: hidden; }
-.effort-bar .bar-fill.bg-gray { background: var(--color-gray-dark); color: #fff; width: 85%; display: flex; align-items: center; padding-left: 20px; font-size: 0.95rem; font-weight: 600; }
-.effort-bar .bar-fill.bg-red { background: var(--color-neon); color: #09101E; width: 15%; display: flex; align-items: center; justify-content: center; font-size: 0.95rem; font-weight: 800; }
-
-.flex-between { display: flex; justify-content: space-between; }
-.effort-item { display: flex; align-items: center; background: var(--bg-card-light); border-radius: 12px; padding: 20px 25px; margin-bottom: 12px; border: 1px solid var(--color-gray-dark); }
-.effort-item .col-left { flex: 1; text-align: left; font-weight: 700; font-size: 1.05rem; }
-.effort-item .col-arrow { color: var(--color-neon); padding: 0 30px; font-weight: 900; font-size: 1.2rem;}
-.effort-item .col-right { flex: 1; text-align: left; font-weight: 600; }
-
-.grand-box { border: 2px solid var(--color-neon); border-radius: 16px; padding: 60px 40px; background: linear-gradient(180deg, rgba(242, 95, 34, 0.1) 0%, rgba(9, 16, 30, 1) 100%); width: 100%; box-shadow: inset 0 0 40px rgba(242, 95, 34, 0.05); }
-
-/* Nút chốt sale khẩn cấp */
-.cta-button {
-  background: linear-gradient(135deg, #F25F22 0%, #F5A623 100%);
-  color: #09101E !important; /* Chữ tối màu viền rực lửa độ tương phản tuyệt đối */
-  border: none;
-  padding: 22px 50px;
-  font-size: 1.25rem;
-  font-weight: 900; /* Dày và to bản */
-  border-radius: 8px; 
-  cursor: pointer;
-  box-shadow: 0 10px 25px rgba(242, 95, 34, 0.4);
-  transition: all 0.3s ease;
-  margin-top: 40px;
-  letter-spacing: 1.5px; /* Giãn cách chữ sang trọng */
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  text-transform: uppercase;
-}
-.cta-button:hover { transform: translateY(-3px) scale(1.03); box-shadow: 0 15px 35px rgba(242, 95, 34, 0.5); background: linear-gradient(135deg, #FF7036 0%, #FDBD36 100%); }
-
-/* Layout nền xen kẽ để chia section nổi bật */
-.bg-white { background-color: #0E1626; width: 100%; color: var(--color-white); padding: 60px 0;}
-.text-dark { color: var(--color-white); }
-.text-gray-light { color: var(--color-neon); }
-.text-gray-dark { color: var(--color-gray); }
-.max-w-700 { max-width: 700px; margin-left: auto; margin-right: auto; }
-.max-w-800 { max-width: 800px; margin-left: auto; margin-right: auto; }
-.line-tight { line-height: 1.2; }
-.line-h-16 { line-height: 1.6; }
-.tracking-wide { letter-spacing: 1.5px; }
-.py-xl { padding-top: 60px; padding-bottom: 60px; }
-.text-left { text-align: left; }
-
-/* Section 4: Before & After */
-.before-after-grid { display: flex; align-items: stretch; justify-content: space-between; gap: 30px; margin-top: 50px; width: 100%; }
-.before-after-grid .card { width: 45%; padding: 45px 35px; border-radius: 12px;}
-.bg-white-card { background: #162238; box-shadow: 0 15px 40px rgba(0,0,0,0.5); border: 1px solid var(--color-gray-dark); }
-.bg-green-light { background: #1E2D4A; border: 2px solid var(--color-neon); box-shadow: 0 15px 40px rgba(242, 95, 34, 0.15); }
-.relative-card { position: relative; }
-.badge-overlap { position: absolute; top: -16px; left: 40px; padding: 8px 25px; border-radius: 4px; font-size: 0.85rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; }
-.badge-gray { background: #2F4163; color: #fff; }
-.badge-green { background: linear-gradient(135deg, #F25F22 0%, #F5A623 100%); color: #09101E; box-shadow: 0 5px 20px rgba(242, 95, 34, 0.3); }
-
-.arrows-green { font-size: 50px; color: var(--color-neon); font-weight: 700; text-shadow: 0 0 20px rgba(242, 95, 34, 0.4); display: flex; align-items: center; }
-
-.list-cross { list-style: none; text-align: left;}
-.list-cross li { margin-bottom: 18px; position: relative; padding-left: 45px; color: var(--color-gray); font-weight: 500;}
-.list-cross li::before { content: '×'; position: absolute; left: 0; background: #2F4163; width: 26px; height: 26px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 900; font-size: 16px; color: #9DAECA; }
-
-.list-check-green { list-style: none; text-align: left; }
-.list-check-green li { margin-bottom: 18px; position: relative; padding-left: 45px; color: var(--color-white); font-weight: 600; }
-.list-check-green li::before { content: '✓'; position: absolute; left: 0; background: var(--color-neon); width: 26px; height: 26px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 900; font-size: 16px; color: #09101E; }
-
-.bg-highlight-green { background: rgba(242, 95, 34, 0.15); color: var(--color-neon); padding: 2px 10px; border-radius: 4px; font-weight: 800; display: inline-block; }
-.underline-green { border-bottom: 2px solid var(--color-neon); font-weight: 700; }
-
-/* Section 5: Roadmap Grid */
-.roadmap-grid { margin-top: 40px; }
-.roadmap-custom { position: relative; border-top: 2px solid var(--color-neon); padding-top: 50px; overflow: visible; background: var(--bg-card);}
-.roadmap-num { background: linear-gradient(135deg, #F25F22 0%, #F5A623 100%); color: #09101E; border: none; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.4rem; font-weight: 800; font-family: 'Lora', serif; position: absolute; top: -30px; left: 30px; box-shadow: 0 5px 20px rgba(242, 95, 34, 0.4); }
-.roadmap-custom p.uppercase { color: var(--color-red); font-weight: 700; }
-.roadmap-custom h3 { font-size: 1.5rem; margin-bottom: 15px; color: var(--color-white); font-weight: 700;}
-
-.list-lightning { list-style: none; text-align: left; margin-top: 25px;}
-.list-lightning li { margin-bottom: 15px; font-size: 1rem; color: var(--color-gray); font-weight: 500;}
-.list-lightning strong { color: var(--color-white); margin-right: 5px; font-weight: 700;}
-
-/* Section 6: Features */
-.feature-row { display: flex; align-items: center; justify-content: space-between; gap: 60px; }
-.feature-row.reverse { flex-direction: row-reverse; }
-.feature-content { flex: 1; padding: 20px 0; }
-.feature-image { flex: 1; width: 100%;}
-
-.relative-num { color: #09101E; font-size: 2rem; font-weight: 800; font-family: 'Lora', serif; border: none; border-radius: 12px; transform: rotate(-3deg); width: 75px; height: 75px; display: flex; align-items: center; justify-content: center; margin-bottom: 30px; background: linear-gradient(135deg, #F25F22 0%, #F5A623 100%); box-shadow: 0 10px 25px rgba(242, 95, 34, 0.4);}
-.feature-title { font-size: 1.6rem; font-weight: 800; text-transform: uppercase; margin-bottom: 15px; letter-spacing: 0px;}
-
-.list-check-green-dark { list-style: none; text-align: left; margin-top: 25px;}
-.list-check-green-dark li { margin-bottom: 18px; position: relative; padding-left: 45px; color: var(--color-gray); font-weight: 500;}
-.list-check-green-dark li::before { content: '✓'; position: absolute; left: 0; background: var(--color-neon); width: 26px; height: 26px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 16px; color: #09101E; }
-.list-check-green-dark strong { color: var(--color-white); margin-right: 5px; font-weight: 700;}
-
-@media (max-width: 768px) {
-  .hero h1 { font-size: 2.2rem; } .title-large { font-size: 2rem; } .grid-2, .grid-3 { grid-template-columns: 1fr; }
-  .effort-item { flex-direction: column; text-align: center; gap: 15px; padding: 25px 20px;}
-  .effort-item .col-left, .effort-item .col-right { text-align: center; }
-  .effort-item .col-arrow { transform: rotate(90deg); margin: 10px 0; }
-  .metrics { flex-direction: column; gap: 20px;} .grand-box { padding: 40px 20px; } .cta-button { width: 100%; padding: 20px; }
-  .before-after-grid { flex-direction: column; align-items: center;} .before-after-grid .card { width: 100%; }
-  .arrows-green { transform: rotate(90deg); margin: 10px 0; font-size: 30px;} .badge-overlap { left: 20px; }
-  .roadmap-custom { padding-top: 60px; }
-  .feature-row { flex-direction: column; text-align: center; gap: 30px;} .feature-row.reverse { flex-direction: column; }
-  .feature-content { text-align: left; } .relative-num { margin: 0 auto 20px 0; }
-}
+    <script src="script.js"></script>
+</body>
+</html>
