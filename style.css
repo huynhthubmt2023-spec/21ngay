@@ -1,22 +1,3 @@
-Ran command: `Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/huynhthubmt2023-spec/21ngay/main/style.css' -OutFile 'style.css'`
-Viewed style.css:1-516
-
-Sự lựa chọn của chị "chuẩn không cần chỉnh"! 
-Màu **Rose Gold (Vàng Hồng Ánh Kim)** kết hợp trên nền **Trắng Kem Vani** thực sự là một bảng phối màu "hoàng gia". Nó vô cùng đắt tiền, sang trọng và thu hút người xem nhờ sự tinh tế, đằm thắm.
-
-Ở concept này, em cũng đã gắn thêm một Hệ thống hình chữ có chân (Serif) mềm mại - đây là phông chữ tiêu chuẩn mà các tạp chí làm đẹp danh tiếng (Vogue, Harper's Bazaar) hay mỹ phẩm cao cấp (Dior, Chanel) sử dụng. Đảm bảo khách hàng tuổi 30-50+ nhìn vào sẽ thấy "uy tín" ngay lập tức!
-
-**Cách thay chiếc áo lụa này vô cùng nhẹ nhàng (chị cứ làm như cũ nha):**
-
-**1.** Chị về lại màn hình kho chứa trên GitHub, lần này chị KHÔNG bấm vào file index nữa, mà bấm vào file có tên là **`style.css`** (Đây là file quy định màu sắc).
-**2.** Bấm tiếp vào biểu tượng **Cây bút chì** để chỉnh sửa.
-**3.** Bấm `Ctrl + A` để bôi đen và **XÓA TRẮNG KHÔNG CÒN GÌ** đoạn code cũ đang có bên trong.
-**4.** Chị bấm nút Copy cái khối code ở dưới đây, và Dán (Paste) vào đó.
-**5.** Cuối cùng bấm **Commit changes** (Xác nhận thay đổi) 2 lần để lưu lại.
-
-Xong!! Mời chị mở lại trang `huynhthu.site` bằng điện thoại (nhớ tải lại trang mạng để nó cập nhật) và chiêm ngưỡng tác phẩm nghệ thuật tuyệt đẹp của riêng mình nhé! 👇
-
-```css
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
 
 :root {
@@ -524,4 +505,3 @@ h1, h2, h3, .title-large, .logo {
   .feature-content { text-align: left; }
   .relative-num { margin: 0 auto 20px 0; }
 }
-```
