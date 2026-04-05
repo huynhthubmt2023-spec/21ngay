@@ -150,51 +150,227 @@
         </div>
     </div>
 
-    <!-- Section 5: Lộ trình thực hành -->
+     <!-- Section 5: SIÊU LỘ TRÌNH 21 NGÀY (BẢN FINAL CHUẨN ĐẦU RA) -->
     <div class="container">
         <section class="section-center mt-xl mb-xl">
-            <h2 class="title-large uppercase">LỘ TRÌNH THỰC HÀNH</h2>
-            <p class="text-gray mb-xl text-center max-w-700 text-m">Quy trình 3 giai đoạn tối giản, đi thẳng vào thực chiến giúp bạn thiết lập, vận hành và thu lợi nhuận <span class="text-neon text-bold">ngay trong 21 ngày</span>.</p>
+            <h2 class="title-large uppercase">LỘ TRÌNH THỰC CHIẾN <span class="text-neon">21 NGÀY</span></h2>
+            <p class="text-gray mb-xl text-center max-w-700 text-m">Mỗi ngày đi qua là một cột mốc. Cầm tay chỉ việc 100% và luôn có "Đầu ra" rõ ràng ngay tại trận.</p>
 
-            <div class="grid-3 gap-2 roadmap-grid">
-                <!-- Card 1 -->
-                <div class="card dark-card roadmap-custom">
-                    <div class="roadmap-num">01</div>
-                    <p class="text-gray text-small tracking-wide mb-xs mt-m uppercase">BÀI 01 - 03</p>
-                    <h3 class="mb-s">Nền Tảng Vững Chắc</h3>
-                    <p class="text-gray text-small mb-m line-h-16">Cấu hình đúng chuẩn ngay từ đầu để AI phân phối nội dung của bạn đến chính xác khách hàng có tiền.</p>
-                    <ul class="list-lightning">
-                        <li><span class="text-neon">⚡</span> <strong>Định vị:</strong> Tìm ra "long mạch" & xây dựng ngách độc bản.</li>
-                        <li><span class="text-neon">⚡</span> <strong>Tối ưu SEO:</strong> Cấu hình kênh chuẩn thuật toán đa nền tảng.</li>
-                        <li><span class="text-neon">⚡</span> <strong>Mồi câu:</strong> Thiết kế mồi câu thu hút khách hàng tiềm năng.</li>
-                    </ul>
-                </div>
-                <!-- Card 2 -->
-                <div class="card dark-card roadmap-custom">
-                    <div class="roadmap-num">02</div>
-                    <p class="text-gray text-small tracking-wide mb-xs mt-m uppercase">BÀI 04 - 10</p>
-                    <h3 class="mb-s">Content & Traffic</h3>
-                    <p class="text-gray text-small mb-m line-h-16">Tự động hóa hoàn toàn khâu kịch bản, chỉnh sửa và đăng tải để giải phóng sức lao động của bạn.</p>
-                    <ul class="list-lightning">
-                        <li><span class="text-neon">⚡</span> <strong>Ma trận AI:</strong> Prompt viết kịch bản video viral tự động.</li>
-                        <li><span class="text-neon">⚡</span> <strong>Dựng nhàn hạ:</strong> Edit video & tạo giọng đọc AI chuyên nghiệp.</li>
-                        <li><span class="text-neon">⚡</span> <strong>Phủ sóng:</strong> Kéo Free Traffic liên tục trên đa nền tảng.</li>
-                    </ul>
-                </div>
-                <!-- Card 3 -->
-                <div class="card dark-card roadmap-custom">
-                    <div class="roadmap-num">03</div>
-                    <p class="text-gray text-small tracking-wide mb-xs mt-m uppercase">BÀI 11 - 16</p>
-                    <h3 class="mb-s">Chuyển Đổi Doanh Thu</h3>
-                    <p class="text-gray text-small mb-m line-h-16">Thiết lập cỗ máy chốt sale âm thầm, biến mọi lượt view ảo thành doanh thu thật chảy vào tài khoản.</p>
-                    <ul class="list-lightning">
-                        <li><span class="text-neon">⚡</span> <strong>Kể chuyện:</strong> Kịch bản Storytelling lồng ghép chốt sale.</li>
-                        <li><span class="text-neon">⚡</span> <strong>Hệ thống phễu:</strong> Tự động điều hướng Follower mua hàng.</li>
-                        <li><span class="text-neon">⚡</span> <strong>Đo lường:</strong> Đọc chỉ số, tối ưu tỷ lệ chuyển đổi & nhân bản.</li>
-                    </ul>
-                </div>
+            <style>
+                .details-phase { background: #162238; border: 1px solid #2F4163; border-radius: 12px; margin-bottom: 20px; overflow: hidden; text-align: left; width: 100%; box-shadow: 0 10px 30px rgba(0,0,0,0.3); transition: all 0.3s; }
+                .details-phase:hover { border-color: #F25F22; }
+                .details-phase summary { padding: 25px 30px; font-size: 1.25rem; font-weight: 800; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; background: linear-gradient(90deg, #162238 0%, #1E2D4A 100%); color: #F0F4F8; text-transform: uppercase; letter-spacing: 0.5px;}
+                .details-phase summary::-webkit-details-marker { display: none; }
+                .details-phase summary::after { content: '▼'; font-size: 1.2rem; color: #F25F22; transition: 0.3s; }
+                .details-phase[open] summary::after { transform: rotate(180deg); }
+                .details-content { padding: 0 30px 30px 30px; }
+                .day-row { padding: 25px 0; border-bottom: 1px dashed rgba(47, 65, 99, 0.6); display: flex; gap: 25px;}
+                .day-row:last-child { border-bottom: none; padding-bottom: 0;}
+                .day-badge { background: rgba(242, 95, 34, 0.15); color: #F5A623; font-weight: 800; padding: 6px 15px; border-radius: 6px; height: fit-content; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px; flex-shrink: 0;}
+                .day-info h4 { color: #FFFFFF; font-size: 1.15rem; margin-bottom: 8px; font-weight: 700;}
+                .day-info p { color: #9DAECA; font-size: 0.95rem; font-weight: 500; line-height: 1.6; margin:0;}
+                .badge-zoom { background: linear-gradient(135deg, #F25F22 0%, #F5A623 100%); color: #09101E; padding: 3px 10px; border-radius: 6px; font-size: 0.75rem; margin-left: 10px; display: inline-block; vertical-align: middle; font-weight: 900;}
+                .deliverable { margin-top: 12px; background: rgba(8, 102, 255, 0.1); border-left: 4px solid #0866FF; padding: 10px 15px; border-radius: 0 8px 8px 0; color: #E8F0FE; font-size: 0.95rem; font-weight: 500; }
+                .deliverable strong { color: #F5A623; margin-right: 5px;}
+                @media (max-width: 768px) { .day-row { flex-direction: column; gap: 10px; } .details-phase summary { padding: 20px; font-size: 1.1rem; } .details-content { padding: 0 20px 20px 20px; } }
+            </style>
+
+            <div class="max-w-800" style="margin: 0 auto; width: 100%;">
+                
+                <!-- GIAI ĐOẠN 1 -->
+                <details class="details-phase" open>
+                    <summary>Giai đoạn 1: Đặt nền móng thương hiệu (Ngày 1-7)</summary>
+                    <div class="details-content">
+                        <div class="day-row">
+                            <div class="day-badge">Ngày 1</div>
+                            <div class="day-info">
+                                <h4>Tôi là ai - và tôi giúp được gì?</h4>
+                                <p>Định vị bản thân, xác định tệp khách hàng lõi và vẽ bản đồ những "nỗi đau" cực mạnh mà bạn giải quyết được.</p>
+                                <div class="deliverable">🎯 <strong>Đầu ra:</strong> Bản tuyên ngôn chuyên gia sắc bén</div>
+                            </div>
+                        </div>
+                        <div class="day-row">
+                            <div class="day-badge">Ngày 2</div>
+                            <div class="day-info">
+                                <h4>Chân dung khách hàng lý tưởng</h4>
+                                <p>Thấu hiểu sâu sắc tệp khách hàng sẵn sàng chi trả cao, phân tách tâm lý mua hàng từ vô hình thành hữu hình.</p>
+                                <div class="deliverable">🎯 <strong>Đầu ra:</strong> Hồ sơ chân dung khách hàng chi tiết</div>
+                            </div>
+                        </div>
+                        <div class="day-row">
+                            <div class="day-badge">Ngày 3</div>
+                            <div class="day-info">
+                                <h4>Tối ưu profile - Biến trang cá nhân thành "cửa hàng"</h4>
+                                <p>Dọn dẹp mặt tiền Facebook/Zalo, tối ưu chuẩn chỉ bộ nhận diện để nâng cấp uy tín thương hiệu cá nhân.</p>
+                                <div class="deliverable">🎯 <strong>Đầu ra:</strong> Profile đạt chuẩn chuyên gia chuyển đổi</div>
+                            </div>
+                        </div>
+                        <div class="day-row">
+                            <div class="day-badge">Ngày 4</div>
+                            <div class="day-info">
+                                <h4>Xây cột sống nội dung cốt lõi</h4>
+                                <p>Phác thảo xương sống nội dung vững chãi để không bao giờ bí chủ đề hay lạc lối khi truyền thông.</p>
+                                <div class="deliverable">🎯 <strong>Đầu ra:</strong> Bản đồ tuyến nội dung triệu view</div>
+                            </div>
+                        </div>
+                        <div class="day-row">
+                            <div class="day-badge">Ngày 5</div>
+                            <div class="day-info">
+                                <h4>Đóng gói kiến thức thành Mồi Câu</h4>
+                                <p>Quy trình thu gom kinh nghiệm đắt giá của bạn để gói ghém lại thành sản phẩm số đầy sức hấp dẫn.</p>
+                                <div class="deliverable">🎯 <strong>Đầu ra:</strong> 1 sản phẩm mồi câu (Ebook/Video) hoàn chỉnh</div>
+                            </div>
+                        </div>
+                        <div class="day-row">
+                            <div class="day-badge">Ngày 6</div>
+                            <div class="day-info">
+                                <h4>Câu chuyện gốc - "Vì sao tôi làm điều này?"</h4>
+                                <p>Cách thức kể lại hành trình cá nhân truyền cảm hứng, đốn gục trái tim và sự đồng cảm của khách hàng.</p>
+                                <div class="deliverable">🎯 <strong>Đầu ra:</strong> Bài viết Storytelling nền tảng</div>
+                            </div>
+                        </div>
+                        <div class="day-row">
+                            <div class="day-badge">Ngày 7</div>
+                            <div class="day-info">
+                                <h4>Tổng kết Giai đoạn 1 - Feedback 1:1 <span class="badge-zoom">HỌC ZOOM</span></h4>
+                                <p>Lên sóng trực tiếp gỡ rối, phân tích các tệp hồ sơ cá nhân và củng cố toàn bộ công đoạn tuần 1.</p>
+                                <div class="deliverable">🎯 <strong>Đầu ra:</strong> Sửa lỗi Profile & Content ngay tại trận</div>
+                            </div>
+                        </div>
+                    </div>
+                </details>
+
+                <!-- GIAI ĐOẠN 2 -->
+                <details class="details-phase">
+                    <summary>Giai đoạn 2: Xây hệ thống Content in tiền (Ngày 8-16)</summary>
+                    <div class="details-content">
+                        <div class="day-row">
+                            <div class="day-badge">Ngày 8</div>
+                            <div class="day-info">
+                                <h4>Ma trận AI - Viết 30 bài trong 1 giờ</h4>
+                                <p>Khởi động "phép thuật" AI Prompting để biến ChatGPT thành trợ lý rải thảm nội dung bùng nổ ý tưởng.</p>
+                                <div class="deliverable">🎯 <strong>Đầu ra:</strong> Bộ khung Prompts ra content không giới hạn</div>
+                            </div>
+                        </div>
+                        <div class="day-row">
+                            <div class="day-badge">Ngày 9</div>
+                            <div class="day-info">
+                                <h4>Content Calendar 30 ngày tự động</h4>
+                                <p>Không còn cảnh mở máy lên mới vặn óc nghĩ bài. Setup kỷ luật 30 ngày chạy nội dung liên hoàn.</p>
+                                <div class="deliverable">🎯 <strong>Đầu ra:</strong> Lịch đăng bài 30 ngày mạch lạc 100%</div>
+                            </div>
+                        </div>
+                        <div class="day-row">
+                            <div class="day-badge">Ngày 10</div>
+                            <div class="day-info">
+                                <h4>Viết lách chuyển đổi cao</h4>
+                                <p>Làm chủ kỹ thuật dẫn dắt độc giả từ tò mò, chuyển sang ham muốn và chốt ngay tin nhắn báo giá.</p>
+                                <div class="deliverable">🎯 <strong>Đầu ra:</strong> Kịch bản chốt đơn mượt mà từ bài viết</div>
+                            </div>
+                        </div>
+                        <div class="day-row">
+                            <div class="day-badge">Ngày 11</div>
+                            <div class="day-info">
+                                <h4>Thiết kế phễu Đơn giản & Sâu</h4>
+                                <p>Vẽ cơ chế phễu chặn từ bước đầu tiên đến bước vét cuối cùng, thu tóm trọn vẹn lưu lượng khách vào rọ.</p>
+                                <div class="deliverable">🎯 <strong>Đầu ra:</strong> Phễu thu data vận hành 100% trơn tru</div>
+                            </div>
+                        </div>
+                        <div class="day-row">
+                            <div class="day-badge">Ngày 12</div>
+                            <div class="day-info">
+                                <h4>Storytelling bán hàng - Đỉnh cao kể chuyện</h4>
+                                <p>Nhập môn kịch bản biến 1 câu chuyện tủn mủn thành công cụ khều ví khách hàng sâu cay nhất.</p>
+                                <div class="deliverable">🎯 <strong>Đầu ra:</strong> 5 kịch bản kể chuyện chuyển đổi cao</div>
+                            </div>
+                        </div>
+                        <div class="day-row">
+                            <div class="day-badge">Ngày 13</div>
+                            <div class="day-info">
+                                <h4>Reels / Video Ngắn - Ma thuật Viral</h4>
+                                <p>Công thức Hook vàng - Nội dung cuốn - CTA bão táp để đánh chiếm top thịnh hành video đa nền tảng.</p>
+                                <div class="deliverable">🎯 <strong>Đầu ra:</strong> Kịch bản Video ngắn lên xu hướng hoàn hảo</div>
+                            </div>
+                        </div>
+                        <div class="day-row">
+                            <div class="day-badge">Ngày 14</div>
+                            <div class="day-info">
+                                <h4>Bẫy Mồi & Chốt Tin Nhắn</h4>
+                                <p>Quy trình giăng lưới, trả lời tin nhắn điều hướng và ghim chặt tâm lý để chốt deal không cần gặp mặt.</p>
+                                <div class="deliverable">🎯 <strong>Đầu ra:</strong> Bộ kịch bản chốt Message cực bén</div>
+                            </div>
+                        </div>
+                        <div class="day-row">
+                            <div class="day-badge">Ngày 15</div>
+                            <div class="day-info">
+                                <h4>Mồi câu miễn phí - Tối đa hóa Leads</h4>
+                                <p>Triển khai rải mồi câu thu thập toàn bộ dữ liệu (Số điện thoại, Email) của người lạ trên internet.</p>
+                                <div class="deliverable">🎯 <strong>Đầu ra:</strong> Link Lead Magnet thu data hoàn thiện</div>
+                            </div>
+                        </div>
+                        <div class="day-row">
+                            <div class="day-badge">Ngày 16</div>
+                            <div class="day-info">
+                                <h4>Lên Phễu & Rà soát Lỗi <span class="badge-zoom">HỌC ZOOM</span></h4>
+                                <p>Cuộc gọi thực chiến test toàn bộ lưu lượng chạy qua phễu đồ sộ 2 tuần qua, cắm mốc ăn mừng đơn đầu tiên.</p>
+                                <div class="deliverable">🎯 <strong>Đầu ra:</strong> Hoàn thiện phễu & Cầm trên tay đơn hàng mồi</div>
+                            </div>
+                        </div>
+                    </div>
+                </details>
+
+                <!-- GIAI ĐOẠN 3 -->
+                <details class="details-phase">
+                    <summary>Giai đoạn 3: Nhân Bản & Tự Động Hóa (Ngày 17 - 21)</summary>
+                    <div class="details-content">
+                        <div class="day-row">
+                            <div class="day-badge">Ngày 17</div>
+                            <div class="day-info">
+                                <h4>Đọc chỉ số - Đo lường mỏ vàng</h4>
+                                <p>Kỹ thuật truy vết các điểm tụt hạng. Nhìn bảng số liệu để biết nên đổ tiền/sức vào đâu sinh lời nhất.</p>
+                                <div class="deliverable">🎯 <strong>Đầu ra:</strong> Bảng Tracking đo lường phễu chuyển đổi</div>
+                            </div>
+                        </div>
+                        <div class="day-row">
+                            <div class="day-badge">Ngày 18</div>
+                            <div class="day-info">
+                                <h4>Tái biên dịch Nội dung - X3 giá trị</h4>
+                                <p>Đừng vứt đi content cũ! Nghiệp vụ "xào nấu" bài viết cũ thành loạt video/post mới mang bóng dáng đỉnh cao.</p>
+                                <div class="deliverable">🎯 <strong>Đầu ra:</strong> Quy trình X3 tài sản nhàn hạ</div>
+                            </div>
+                        </div>
+                        <div class="day-row">
+                            <div class="day-badge">Ngày 19</div>
+                            <div class="day-info">
+                                <h4>Xây Landing Page gom khách</h4>
+                                <p>Trực tiếp kéo, thả, lên khung Landing Page chuẩn mượt để khách tự bơi vào như cách chị đang làm.</p>
+                                <div class="deliverable">🎯 <strong>Đầu ra:</strong> Sở hữu cổng Website cá nhân xịn xò</div>
+                            </div>
+                        </div>
+                        <div class="day-row">
+                            <div class="day-badge">Ngày 20</div>
+                            <div class="day-info">
+                                <h4>Hệ thống làm việc 2 giờ/ngày</h4>
+                                <p>Bảo trì cỗ máy, áp dụng luật làm việc tối giản năng suất cao chống hiện tượng chán nản (Burn out).</p>
+                                <div class="deliverable">🎯 <strong>Đầu ra:</strong> Quy trình chuyên gia rảnh tay (2h/ngày)</div>
+                            </div>
+                        </div>
+                        <div class="day-row">
+                            <div class="day-badge">Ngày 21</div>
+                            <div class="day-info">
+                                <h4>Lễ Tốt Nghiệp & Bàn Giao <span class="badge-zoom">HỌC ZOOM</span></h4>
+                                <p>Ăn mừng chiến thắng. Đóng thùng toàn bộ kiến thức 21 ngày và bật công tắc cho động cơ chạy xuyên lễ Tết.</p>
+                                <div class="deliverable">🎯 <strong>Đầu ra:</strong> Nhận trọn bộ Roadmap phát triển 90 ngày tới</div>
+                            </div>
+                        </div>
+                    </div>
+                </details>
+                
             </div>
         </section>
+    </div>
+    <!-- KẾT THÚC Section 5 -->
+
 
         <!-- Section 6: Chương trình này sẽ thay đổi... -->
         <section class="section-center mt-xl mb-xl">
