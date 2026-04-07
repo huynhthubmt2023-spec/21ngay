@@ -1,299 +1,578 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&display=swap');
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thử Thách 21 Ngày Biến Nội Dung Thành Tiền</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="top-banner">
+        Ghi danh lớp học Ưu đãi Early Bird sẽ kết thúc lúc <span id="countdown">0 ngày 02 giờ 45 phút 10 giây</span>
+    </div>
 
-:root {
-  --bg-color: #09101E; /* Chuyên gia, An toàn (Deep Nền Chính) */
-  --bg-card: #162238; /* Khối màu nổi bật chuẩn ClickFunnels */
-  --bg-card-light: #1E2D4A; /* Màu Section */
-  --color-neon: #F25F22; /* Cam Nóng hừng hực - Thúc đẩy hành động CTA */
-  --color-neon-dim: rgba(242, 95, 34, 0.15);
-  --color-red: #F5A623; /* Vàng Ánh kim điểm nhấn phụ */
-  --color-red-dim: rgba(245, 166, 35, 0.05);
-  --color-white: #F0F4F8; /* Nội dung text siêu rõ nét - Chữ sáng */
-  --color-gray: #9DAECA;
-  --color-gray-dark: #2F4163; /* Khung viền sắc bén */
-}
+    <div class="container">
+        <!-- Logo -->
+        <div class="logo">
+            <span class="logo-icon">\\\</span> CONTENT MASTERY
+        </div>
 
-/* Base resets & typography */
-* { margin: 0; padding: 0; box-sizing: border-box; }
+        <!-- Hero Section -->
+        <header class="hero">
+            <h1>
+                Không Cần Giỏi Viết,<br>
+                <div class="glow-container">
+                    <span class="text-glow-bg">Không Cần Viral</span>
+                </div><br>
+                Hệ Thống Tự Động Mang Tiền Về<br>
+                <span class="text-neon">Chỉ Trong 21 Ngày!</span>
+            </h1>
+            <p class="hero-sub">
+                "Không cần rành công nghệ, không phụ thuộc cảm hứng — chỉ cần làm đủ 21 ngày, hệ thống sẽ lo phần còn lại và tiền tự chảy vào."
+            </p>
+            <div class="mt-m">
+                <a href="#register" class="cta-button">TÔI MUỐN THAM GIA NGAY &rarr;</a>
+            </div>
+        </header>
 
-body {
-  font-family: 'Inter', sans-serif;
-  background-color: var(--bg-color);
-  color: var(--color-white);
-  line-height: 1.6;
-  padding-bottom: 100px;
-}
+        <!-- Section 1 -->
+        <section class="section-center mt-xl">
+            <p class="text-gray text-m">Bạn không phải là người duy nhất gặp tình trạng này. Và nói thẳng:</p>
+            <h2 class="title-large">VẤN ĐỀ <span class="text-neon">KHÔNG PHẢI Ở BẠN</span></h2>
+            
+            <div class="pill-outline">
+                <span class="text-neon">$</span> Sự thật là bạn đang làm sai cách.
+            </div>
+            
+            <div class="arrow-down">↓</div>
 
-/* Lora: Giữ lại độ "Sang" của chuyên gia tuổi 40+ */
-h1, h2, h3, .title-large, .logo {
-  font-family: 'Lora', serif;
-  font-weight: 700;
-  letter-spacing: -0.5px;
-}
+            <div class="grid-2 gap-2 mt-l">
+                <!-- Card Nỗ Lực -->
+                <div class="card dark-card">
+                    <h3>Sự nỗ lực của bạn</h3>
+                    <p class="text-gray mb-s">Bạn không thiếu chăm chỉ, cố gắng hay kiến thức.</p>
+                    <ul class="list-check">
+                        <li>Học cách viết content mỗi ngày</li>
+                        <li>Xem hàng chục video xây kênh</li>
+                        <li>Đăng bài đều đặn một thời gian dài</li>
+                    </ul>
+                </div>
+                <!-- Card Kết Quả -->
+                <div class="card dark-card border-dark-red">
+                    <h3 class="text-red">Nhưng kết quả vẫn vậy</h3>
+                    <p class="text-gray mb-s">Bạn rơi vào vùng trũng của sự cạn kiệt năng lượng.</p>
+                    <div class="metrics">
+                        <div class="metric">
+                            <span class="icon-red pb-xs">👁️‍🗨️</span> 
+                            0 VIEWS
+                        </div>
+                        <div class="metric">
+                            <span class="icon-red pb-xs">💔</span> 
+                            0 LEADS
+                        </div>
+                        <div class="metric">
+                            <span class="icon-red pb-xs">💲</span> 
+                            0 SALES
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-/* Biểu ngữ cảnh báo cực mạnh trên đỉnh web */
-.top-banner {
-  background: linear-gradient(90deg, #F25F22 0%, #F5A623 100%);
-  color: #09101E;
-  text-align: center;
-  padding: 12px 20px;
-  font-weight: 800;
-  font-size: 0.95rem;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-}
+        <!-- Section 3: Giải pháp -->
+        <section class="section-center mt-xl mb-xl">
+            <h2 class="title-large mt-l">Sự thật về người <span class="text-white">có khách đều đặn</span></h2>
+            <p class="text-gray mb-l">Họ không giỏi hơn bạn. Họ chỉ có một <span class="text-neon text-bold uppercase">HỆ THỐNG VẬN HÀNH</span> phía sau.</p>
 
-.container { max-width: 950px; margin: 0 auto; padding: 0 20px; }
+            <div class="grid-3 gap-2">
+                <div class="card text-center card-hover">
+                    <div class="icon-neon mb-s">💬</div>
+                    <p class="text-sm font-semibold">Biết chính xác nên nói gì, làm gì mỗi ngày</p>
+                </div>
+                <div class="card text-center card-hover">
+                    <div class="icon-neon mb-s">👥</div>
+                    <p class="text-sm font-semibold">Biến người xem dạo thành người tin tưởng</p>
+                </div>
+                <div class="card text-center card-hover">
+                    <div class="icon-neon mb-s">💲</div>
+                    <p class="text-sm font-semibold">Tự động chuyển đổi niềm tin ra doanh thu</p>
+                </div>
+            </div>
 
-/* Utils */
-.text-center { text-align: center; }
-.text-neon { color: var(--color-neon); }
-.text-red { color: var(--color-red); }
-.text-gray { color: var(--color-gray); }
-.text-white { color: var(--color-white); }
-.text-small { font-size: 0.85rem; }
-.text-sm { font-size: 0.95rem; }
-.text-m { font-size: 1.1rem; }
-.text-lg { font-size: 1.3rem; }
-.text-xl { font-size: 1.8rem; }
-.uppercase { text-transform: uppercase; }
-.text-bold { font-weight: 700; }
-.bold-800 { font-weight: 800; }
-.font-semibold { font-weight: 600; }
+            <div class="arrow-down mt-l mb-l">↓</div>
+            
+            <div class="grand-box">
+                <p class="text-gray text-m">Khi có hệ thống này, bạn không cần "cố nghĩ content" mỗi tối.</p>
+                <p class="text-gray text-m">Bạn không còn phụ thuộc vào cảm hứng để ra đơn.</p>
+                <p class="text-gray text-m">Không phải học thêm. Không phải làm nhiều hơn.</p>
+                
+                <h3 class="mt-l text-white text-lg font-semibold">Đó là thứ bạn sẽ xây trong 21 ngày tới:</h3>
+                <h2 class="text-neon text-xl uppercase mt-xs mb-l bold-800">Hệ thống thu hút khách hàng đều đặn, tự động và lặp lại.</h2>
 
-.mt-xs { margin-top: 10px; } .mt-s { margin-top: 20px; } .mt-m { margin-top: 30px; } .mt-l { margin-top: 50px; } .mt-xl { margin-top: 80px; }
-.mb-xs { margin-bottom: 10px; } .mb-s { margin-bottom: 20px; } .mb-m { margin-bottom: 30px; } .mb-l { margin-bottom: 50px; } .mb-xl { margin-bottom: 80px; }
-.pb-xs { padding-bottom: 5px; }
+                <a href="#register" class="cta-button">ĐĂNG KÝ THAM GIA THỬ THÁCH NGAY!</a>
+                <p class="text-small text-gray mt-m">(Số lượng giới hạn: Chỉ nhận học viên cam kết hành động)</p>
+            </div>
+        </section>
+    </div>
 
-.logo { text-align: center; padding: 40px 0 20px 0; font-weight: 800; letter-spacing: 2px; color: var(--color-white); font-size: 1.3rem; }
-.logo-icon { color: var(--color-neon); font-weight: 900; margin-right: 5px; }
+    <!-- Section 4: Sự thay đổi đáng kinh ngạc (Light Theme) -->
+    <div class="bg-white">
+        <div class="container">
+            <section class="section-center py-xl">
+                <h2 class="title-large text-dark">SỰ THAY ĐỔI <span class="text-gray-light">ĐÁNG KINH NGẠC</span></h2>
+                <p class="text-gray-dark text-m mb-xl max-w-700">Đừng chỉ nhìn vào con số, hãy nhìn vào cách cuộc chơi của bạn thay đổi hoàn toàn sau 21 ngày thiết lập hệ thống.</p>
+                
+                <div class="before-after-grid">
+                    <!-- Before Card -->
+                    <div class="card bg-white-card border-gray relative-card">
+                        <div class="badge-overlap badge-gray">TRƯỚC KHI THAM GIA</div>
+                        <ul class="list-cross mt-m">
+                            <li><strong>Đăng bài đều</strong>, views có, nhưng 0 đơn hàng — không biết tại sao.</li>
+                            <li><strong>Mất hàng giờ</strong> nặn ý tưởng mỗi ngày, kiệt sức mà không ra tiền.</li>
+                            <li>Dùng AI viết bài nhưng content <strong>vô hồn, công nghiệp</strong>, không ai mua.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="arrows-green">»</div>
+                    
+                    <!-- After Card -->
+                    <div class="card bg-green-light border-green relative-card">
+                        <div class="badge-overlap badge-green">SAU 21 NGÀY THỰC CHIẾN</div>
+                        <ul class="list-check-green mt-m">
+                            <li>Có ngay <span class="bg-highlight-green">hệ thống content + phễu + offer</span> — mỗi bài đăng có mục tiêu bán hàng cụ thể.</li>
+                            <li>Dùng AI đúng cách: <span class="underline-green">viết nhanh gấp 10</span>, vẫn ra bài chuyển đổi cao.</li>
+                            <li>Xây kênh cá nhân monetize dài hạn — không phụ thuộc viral, không cần chờ cảm hứng.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
 
-.hero { text-align: center; padding: 10px 0 60px 0; }
-.hero h1 { font-size: 3.5rem; font-weight: 800; line-height: 1.25; margin-bottom: 30px; }
+        <!-- ========================================================= -->
+        <!-- ========================================================= -->
+        <!-- ========================================================= -->
+    <!-- Section 5: LỘ TRÌNH 21 NGÀY (BẢN TỪ NGỮ ĐƠN GIẢN, TRỰC DIỆN) -->
+    <!-- ========================================================= -->
+    <div class="container">
+        <section class="section-center mt-xl mb-xl">
+            <h2 class="title-large uppercase">LỘ TRÌNH THỰC HÀNH <span class="text-neon">21 NGÀY</span></h2>
+            <p class="text-gray mb-xl text-center max-w-700 text-m" style="margin: 0 auto; margin-bottom: 40px;">Chương trình tối ưu tính thực hành. Mỗi ngày làm một nhiệm vụ nhỏ gọn, có hướng dẫn chi tiết để ra kết quả cụ thể.</p>
 
-/* The hot gradient background behind important text */
-.glow-container { display: inline-block; margin: 5px 0; }
-.text-glow-bg {
-  background: linear-gradient(135deg, #F25F22 0%, #F5A623 100%);
-  color: #09101E; /* Chữ xám tối màu trên nền cam sáng -> Cảnh báo cực bốc */
-  padding: 0px 20px;
-  border-radius: 8px;
-  box-shadow: 0 5px 25px rgba(242, 95, 34, 0.4);
-  display: inline-block;
-  font-weight: 800;
-  transform: rotate(-1.5deg); 
-}
+            <style>
+                .details-phase { background: #162238; border: 1px solid #2F4163; border-radius: 12px; margin-bottom: 20px; overflow: hidden; text-align: left; width: 100%; box-shadow: 0 10px 30px rgba(0,0,0,0.3); transition: all 0.3s; }
+                .details-phase:hover { border-color: #F25F22; }
+                .details-phase summary { padding: 25px 30px; font-size: 1.25rem; font-weight: 800; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; background: linear-gradient(90deg, #162238 0%, #1E2D4A 100%); color: #F0F4F8; text-transform: uppercase; letter-spacing: 0.5px;}
+                .details-phase summary::-webkit-details-marker { display: none; }
+                .details-phase summary::after { content: '▼'; font-size: 1.2rem; color: #F25F22; transition: 0.3s; }
+                .details-phase[open] summary::after { transform: rotate(180deg); }
+                .details-content { padding: 0 30px 30px 30px; }
+                .day-row { padding: 25px 0; border-bottom: 1px dashed rgba(47, 65, 99, 0.6); display: flex; gap: 25px;}
+                .day-row:last-child { border-bottom: none; padding-bottom: 0;}
+                .day-badge { background: rgba(242, 95, 34, 0.15); color: #F5A623; font-weight: 800; padding: 6px 15px; border-radius: 6px; height: fit-content; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px; flex-shrink: 0;}
+                .day-info h4 { color: #FFFFFF; font-size: 1.15rem; margin-bottom: 8px; font-weight: 700;}
+                .day-info p { color: #9DAECA; font-size: 0.95rem; font-weight: 500; line-height: 1.6; margin:0;}
+                .badge-zoom { background: linear-gradient(135deg, #F25F22 0%, #F5A623 100%); color: #09101E; padding: 3px 10px; border-radius: 6px; font-size: 0.75rem; margin-left: 10px; display: inline-block; vertical-align: middle; font-weight: 900;}
+                .deliverable { margin-top: 12px; background: rgba(8, 102, 255, 0.1); border-left: 4px solid #0866FF; padding: 10px 15px; border-radius: 0 8px 8px 0; color: #E8F0FE; font-size: 0.95rem; font-weight: 500; display: inline-block;}
+                .deliverable strong { color: #F5A623; margin-right: 5px;}
+                
+                @media (max-width: 768px) { .day-row { flex-direction: column; gap: 10px; } .details-phase summary { padding: 20px; font-size: 1.1rem; } .details-content { padding: 0 20px 20px 20px; } }
+            </style>
 
-.hero-sub { color: var(--color-gray); font-size: 1.15rem; font-weight: 500; font-style: italic; max-width: 750px; margin: 0 auto; line-height: 1.7; }
-.section-center { display: flex; flex-direction: column; align-items: center; text-align: center; }
-.title-large { font-size: 2.8rem; font-weight: 800; line-height: 1.2; margin: 10px 0 20px 0; text-shadow: 0 2px 10px rgba(0,0,0,0.5);}
+            <div class="max-w-800" style="margin: 0 auto; width: 100%;">
+                
+                <!-- GIAI ĐOẠN 1 -->
+                <details class="details-phase" open>
+                    <summary>1. Đặt nền móng thương hiệu (Ngày 1-7)</summary>
+                    <div class="details-content">
+                        <div class="day-row">
+                            <div class="day-badge">Ngày 1</div>
+                            <div class="day-info">
+                                <h4>Nhận diện bản thân (Tôi giúp được gì?)</h4>
+                                <p>Xác định rõ thế mạnh cốt lõi của bản thân, chọn đúng ngách công việc để tiếp cận đúng khách hàng mục tiêu.</p>
+                                <div class="deliverable">🎯 <strong>Đầu ra:</strong> Bản định vị chuyên gia cá nhân</div>
+                            </div>
+                        </div>
+                        <div class="day-row">
+                            <div class="day-badge">Ngày 2</div>
+                            <div class="day-info">
+                                <h4>Chân dung khách hàng lý tưởng</h4>
+                                <p>Phân tích cụ thể nhu cầu và vướng mắc của khách hàng để xây dựng nội dung giải quyết đúng vấn đề của họ.</p>
+                                <div class="deliverable">🎯 <strong>Đầu ra:</strong> Bản phân tích hồ sơ khách hàng</div>
+                            </div>
+                        </div>
+                        <div class="day-row">
+                            <div class="day-badge">Ngày 3</div>
+                            <div class="day-info">
+                                <h4>Tối ưu Profile trang cá nhân</h4>
+                                <p>Hướng dẫn cụ thể cách biến Facebook/Zalo của bạn thành một nơi cực kỳ thu hút đối với khách hàng tiềm năng.</p>
+                                <div class="deliverable">🎯 <strong>Đầu ra:</strong> Profile trang cá nhân đạt chuẩn</div>
+                            </div>
+                        </div>
+                        <div class="day-row">
+                            <div class="day-badge">Ngày 4</div>
+                            <div class="day-info">
+                                <h4>Xây dựng cấu trúc nội dung</h4>
+                                <p>Lên danh sách các nhóm chủ đề chính liên quan đến công việc của bạn để duy trì bài đăng hàng ngày dễ dàng.</p>
+                                <div class="deliverable">🎯 <strong>Đầu ra:</strong> Bản đồ cấu trúc nội dung viết bài</div>
+                            </div>
+                        </div>
+                        <div class="day-row">
+                            <div class="day-badge">Ngày 5</div>
+                            <div class="day-info">
+                                <h4>Đóng gói kiến thức thành tài liệu</h4>
+                                <p>Tổng hợp kinh nghiệm và trải nghiệm của bạn thành một tài liệu hữu ích (như ebook, file excel) để làm quà tặng miễn phí.</p>
+                                <div class="deliverable">🎯 <strong>Đầu ra:</strong> 1 sản phẩm quà tặng hoàn chỉnh</div>
+                            </div>
+                        </div>
+                        <div class="day-row">
+                            <div class="day-badge">Ngày 6</div>
+                            <div class="day-info">
+                                <h4>Bài viết kể chuyện bản thân</h4>
+                                <p>Cách giới thiệu bản thân trực diện và chân thực nhất để tạo sự kết nối và tin tưởng với người theo dõi bạn.</p>
+                                <div class="deliverable">🎯 <strong>Đầu ra:</strong> Bài viết giới thiệu hành trình cá nhân</div>
+                            </div>
+                        </div>
+                        <div class="day-row">
+                            <div class="day-badge">Ngày 7</div>
+                            <div class="day-info">
+                                <h4>Review và tổng kết Tuần 1 <span class="badge-zoom">HỌC ZOOM</span></h4>
+                                <p>Giải đáp thắc mắc và xem xét lại toàn bộ nội dung tuần 1. Đóng góp ý kiến trực tiếp trên nền tảng của từng người.</p>
+                                <div class="deliverable">🎯 <strong>Đầu ra:</strong> Hoàn thiện trọn vẹn kết quả tuần đầu tiên</div>
+                            </div>
+                        </div>
+                    </div>
+                </details>
 
-.pill-outline { display: inline-flex; align-items: center; gap: 15px; padding: 12px 30px; border-radius: 40px; border: 2px solid var(--color-red); color: var(--color-red); font-weight: 700; background: var(--bg-card-light); margin-top: 20px; font-size: 1.1rem; }
-.arrow-down { font-size: 24px; color: var(--color-neon); margin-top: 40px; font-weight: 900;}
+                <!-- GIAI ĐOẠN 2 -->
+                <details class="details-phase">
+                    <summary>2. Xây hệ thống nội dung tiếp cận (Ngày 8-16)</summary>
+                    <div class="details-content">
+                        <div class="day-row">
+                            <div class="day-badge">Ngày 8</div>
+                            <div class="day-info">
+                                <h4>Tối ưu thời gian và sử dụng AI</h4>
+                                <p>Hướng dẫn sử dụng công cụ AI (ChatGPT) để tìm ý tưởng và sắp xếp nội dung văn bản một cách nhanh gọn.</p>
+                                <div class="deliverable">🎯 <strong>Đầu ra:</strong> Danh sách câu lệnh (Prompts) thực tế cho AI</div>
+                            </div>
+                        </div>
+                        <div class="day-row">
+                            <div class="day-badge">Ngày 9</div>
+                            <div class="day-info">
+                                <h4>Lịch đăng bài 30 ngày</h4>
+                                <p>Xếp lịch chủ đề bài đăng cụ thể để bạn luôn biết chính xác ngày mai cần viết và chia sẻ nội dung gì.</p>
+                                <div class="deliverable">🎯 <strong>Đầu ra:</strong> Bảng lịch trình chuyên môn trong 30 ngày</div>
+                            </div>
+                        </div>
+                        <div class="day-row">
+                            <div class="day-badge">Ngày 10</div>
+                            <div class="day-info">
+                                <h4>Viết bài giới thiệu dịch vụ</h4>
+                                <p>Cách trình bày thông tin sản phẩm và dịch vụ rõ ràng, giúp người đọc dễ hiểu quyền lợi và muốn đăng ký tham gia.</p>
+                                <div class="deliverable">🎯 <strong>Đầu ra:</strong> Bài viết giới thiệu dịch vụ rõ ràng mạch lạc</div>
+                            </div>
+                        </div>
+                        <div class="day-row">
+                            <div class="day-badge">Ngày 11</div>
+                            <div class="day-info">
+                                <h4>Thiết kế luồng thu thập thông tin</h4>
+                                <p>Tạo quy trình đơn giản để khách quan tâm có thể nhấn nhận tài liệu và để lại thông tin (Email/Số điện thoại) cho bạn.</p>
+                                <div class="deliverable">🎯 <strong>Đầu ra:</strong> Quy trình biểu mẫu thu thập dữ liệu khách</div>
+                            </div>
+                        </div>
+                        <div class="day-row">
+                            <div class="day-badge">Ngày 12</div>
+                            <div class="day-info">
+                                <h4>Lồng ghép kinh nghiệm vào bài bán hàng</h4>
+                                <p>Sử dụng những câu chuyện trải nghiệm thực tế của bạn lồng ghép vào lúc giới thiệu dịch vụ để tạo sự tin cậy.</p>
+                                <div class="deliverable">🎯 <strong>Đầu ra:</strong> 5 ý tưởng bài viết thực tế có tính thuyết phục cao</div>
+                            </div>
+                        </div>
+                        <div class="day-row">
+                            <div class="day-badge">Ngày 13</div>
+                            <div class="day-info">
+                                <h4>Xây dựng nền tảng Video ngắn</h4>
+                                <p>Hướng dẫn cơ bản các bước lên ý tưởng và quay dựng video cá nhân để có thể tiếp cận khách trên Tiktok, Reels.</p>
+                                <div class="deliverable">🎯 <strong>Đầu ra:</strong> Kịch bản cho video ngắn gọn nhẹ</div>
+                            </div>
+                        </div>
+                        <div class="day-row">
+                            <div class="day-badge">Ngày 14</div>
+                            <div class="day-info">
+                                <h4>Thu hút lượt truy cập khách hàng</h4>
+                                <p>Các bước cơ bản để hướng dẫn người xem từ các nhóm thảo luận nhấn vào đường link xem tài liệu của bạn.</p>
+                                <div class="deliverable">🎯 <strong>Đầu ra:</strong> Các phương án thu hút lượt truy cập</div>
+                            </div>
+                        </div>
+                        <div class="day-row">
+                            <div class="day-badge">Ngày 15</div>
+                            <div class="day-info">
+                                <h4>Ra mắt và Gửi tài liệu miễn phí</h4>
+                                <p>Đăng tải cuốn tài liệu tặng kèm (ở ngày 5) lên các kênh truyền thông để bắt đầu tiếp nhận thông tin từ người quan tâm.</p>
+                                <div class="deliverable">🎯 <strong>Đầu ra:</strong> Bắt đầu tiếp nhận danh sách khách hàng mới</div>
+                            </div>
+                        </div>
+                        <div class="day-row">
+                            <div class="day-badge">Ngày 16</div>
+                            <div class="day-info">
+                                <h4>Review và kiểm tra tiến độ <span class="badge-zoom">HỌC ZOOM</span></h4>
+                                <p>Kiểm tra lại toàn diện quá trình khách hàng nhận thông tin. Hướng dẫn cách thức xử lý và trả lời tin nhắn của khách.</p>
+                                <div class="deliverable">🎯 <strong>Đầu ra:</strong> Hệ thống bắt đầu hoạt động hiệu quả</div>
+                            </div>
+                        </div>
+                    </div>
+                </details>
 
-.grid-2 { display: grid; grid-template-columns: 1fr 1fr; width: 100%; }
-.grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); width: 100%; }
-.gap-2 { gap: 24px; }
+                <!-- GIAI ĐOẠN 3 -->
+                <details class="details-phase">
+                    <summary>3. Tối ưu thời gian & Vận hành (Ngày 17-21)</summary>
+                    <div class="details-content">
+                        <div class="day-row">
+                            <div class="day-badge">Ngày 17</div>
+                            <div class="day-info">
+                                <h4>Thống kê và Đo lường</h4>
+                                <p>Xem báo cáo các con số cơ bản (lượt xem, bình luận, chia sẻ) để đánh giá xem dạng bài viết nào đang mang lại hiệu quả tốt nhất.</p>
+                                <div class="deliverable">🎯 <strong>Đầu ra:</strong> Bảng theo dõi và thống kê hiệu quả nội dung</div>
+                            </div>
+                        </div>
+                        <div class="day-row">
+                            <div class="day-badge">Ngày 18</div>
+                            <div class="day-info">
+                                <h4>Tái sử dụng nội dung cũ</h4>
+                                <p>Phương pháp chỉnh sửa lại kết cấu các bài viết đã hiệu quả trước đó để dùng lại, giúp bạn tiết kiệm thời gian ngồi nghĩ ý tưởng.</p>
+                                <div class="deliverable">🎯 <strong>Đầu ra:</strong> Danh sách thủ thuật dùng lại tài nguyên bài cũ</div>
+                            </div>
+                        </div>
+                        <div class="day-row">
+                            <div class="day-badge">Ngày 19</div>
+                            <div class="day-info">
+                                <h4>Xây dựng trang Landing Page cơ bản</h4>
+                                <p>Hoàn thiện một trang web ngắn gọn (giống như trang này) mô tả tất cả thông tin dịch vụ của bạn để tiết kiệm thời gian tư vấn.</p>
+                                <div class="deliverable">🎯 <strong>Đầu ra:</strong> Trang Landing Page giới thiệu dịch vụ</div>
+                            </div>
+                        </div>
+                        <div class="day-row">
+                            <div class="day-badge">Ngày 20</div>
+                            <div class="day-info">
+                                <h4>Tối ưu thời gian làm việc cá nhân</h4>
+                                <p>Sắp xếp lại lịch trình mỗi ngày để duy trì việc sản xuất nội dung trong khoảng thời gian lý tưởng nhất, tránh rơi vào mệt mỏi.</p>
+                                <div class="deliverable">🎯 <strong>Đầu ra:</strong> Thời gian biểu làm việc nhẹ nhàng, cân bằng</div>
+                            </div>
+                        </div>
+                        <div class="day-row">
+                            <div class="day-badge">Ngày 21</div>
+                            <div class="day-info">
+                                <h4>Review và Tổng kết chương trình <span class="badge-zoom">HỌC ZOOM</span></h4>
+                                <p>Tổng kết lại những việc đã đạt được trong 21 ngày. Lên kế hoạch nhắc việc cụ thể để bạn tự duy trì dễ dàng trong 3 tháng tới.</p>
+                                <div class="deliverable">🎯 <strong>Đầu ra:</strong> Kế hoạch hành động chi tiết vào mục tiêu kế tiếp</div>
+                            </div>
+                        </div>
+                    </div>
+                </details>
+                
+            </div>
+        </section>
 
-.card { background: var(--bg-card); border: 1px solid var(--color-gray-dark); border-radius: 12px; padding: 35px 30px; text-align: left; box-shadow: 0 10px 30px rgba(0,0,0,0.4); }
-.card-hover { transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease; }
-.card-hover:hover { transform: translateY(-8px); border-color: var(--color-neon); box-shadow: 0 15px 35px rgba(242, 95, 34, 0.2); }
-.dark-card h3 { font-size: 1.5rem; margin-bottom: 15px; font-weight: 700; color: var(--color-white); }
+    <!-- KẾT THÚC Section 5 MỚI NHẤT -->
 
-.list-check { list-style: none; margin-top: 30px; }
-.list-check li { margin-bottom: 16px; position: relative; padding-left: 35px; color: var(--color-gray); font-weight: 500; }
-.list-check li::before { content: '✓'; position: absolute; left: 0; color: var(--color-neon); font-weight: 900; font-size: 1.1rem;}
 
-.border-dark-red { border: 1px solid rgba(245, 166, 35, 0.3); background: var(--color-red-dim); }
 
-.metrics { display: flex; gap: 15px; margin-top: 40px; justify-content: space-between; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 30px; }
-.metric { text-align: center; font-size: 0.9rem; font-weight: 800; color: var(--color-red); display: flex; flex-direction: column; align-items: center; gap: 8px; letter-spacing: 1px; }
 
-.icon-red { font-size: 28px; }
-.icon-neon { font-size: 36px; color: var(--color-neon); }
 
-.efforts-list { background: var(--bg-card); border-radius: 16px; border: 1px solid var(--color-gray-dark); padding: 40px; width: 100%; }
-.effort-header { text-align: center; color: var(--color-gray); font-size: 0.85rem; letter-spacing: 1px; margin-bottom: 30px; font-weight: 600; }
-.effort-bar-wrapper { margin-bottom: 40px; }
-.effort-bar { display: flex; height: 38px; border-radius: 20px; overflow: hidden; }
-.effort-bar .bar-fill.bg-gray { background: var(--color-gray-dark); color: #fff; width: 85%; display: flex; align-items: center; padding-left: 20px; font-size: 0.95rem; font-weight: 600; }
-.effort-bar .bar-fill.bg-red { background: var(--color-neon); color: #09101E; width: 15%; display: flex; align-items: center; justify-content: center; font-size: 0.95rem; font-weight: 800; }
+        <!-- Section 6: Chương trình này sẽ thay đổi... -->
+        <section class="section-center mt-xl mb-xl">
+            <h2 class="title-large text-center mb-xs uppercase line-tight">CHƯƠNG TRÌNH NÀY SẼ THAY ĐỔI<br><span class="text-neon">CÁCH MÀ BẠN ĐANG LÀM VIỆC</span></h2>
+            <p class="text-gray text-center max-w-800 mb-xl text-m">Không chỉ là một chương trình, đây là "bệ phóng" cung cấp cho bạn mọi tài nguyên, công cụ, kiến thức và sự đồng hành để giúp bạn xây kênh 1 cách bền vững trong 21 ngày tới.</p>
 
-.flex-between { display: flex; justify-content: space-between; }
-.effort-item { display: flex; align-items: center; background: var(--bg-card-light); border-radius: 12px; padding: 20px 25px; margin-bottom: 12px; border: 1px solid var(--color-gray-dark); }
-.effort-item .col-left { flex: 1; text-align: left; font-weight: 700; font-size: 1.05rem; }
-.effort-item .col-arrow { color: var(--color-neon); padding: 0 30px; font-weight: 900; font-size: 1.2rem;}
-.effort-item .col-right { flex: 1; text-align: left; font-weight: 600; }
+            <!-- Feature 1 -->
+            <div class="feature-row mb-xl">
+                <div class="feature-content text-left">
+                    <div class="feature-number relative-num">01</div>
+                    <h3 class="feature-title">05 BUỔI ZOOM CHIẾN LƯỢC</h3>
+                    <p class="text-gray mb-m text-m">Nhận chuyển giao chiến lược "Ma trận nội dung AI" độc quyền trực tiếp từ đội ngũ chuyên gia trong hành trình 21 ngày.</p>
+                    <ul class="list-check-green-dark">
+                        <li><strong>Tư duy chuẩn:</strong> Hiểu rõ nhân hiệu & phễu bán tự động.</li>
+                        <li><strong>Chiến lược:</strong> Cách đi tắt đón đầu thống lĩnh ngách.</li>
+                        <li><strong>Cá nhân hóa:</strong> Trực tiếp giải đáp & định hướng lộ trình riêng.</li>
+                    </ul>
+                </div>
+                <div class="feature-image">
+                    <img src="https://images.unsplash.com/photo-1609921212029-bb5a28e60960?w=800&q=80" alt="Zoom Chiến Lược" style="width: 100%; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); object-fit: cover; aspect-ratio: 4/3;">
+                </div>
+            </div>
+            
+            <!-- Feature 2 -->
+            <div class="feature-row reverse mb-xl">
+                 <div class="feature-image">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=80" alt="Thực Hành Nhóm" style="width: 100%; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); object-fit: cover; aspect-ratio: 4/3;">
+                </div>
+                <div class="feature-content text-left">
+                    <div class="feature-number relative-num">02</div>
+                    <h3 class="feature-title">16 BUỔI ZOOM THỰC HÀNH</h3>
+                    <p class="text-gray mb-m text-m">Không bỏ rơi bạn với mớ lý thuyết suông. Chúng ta sẽ cùng nhau mở máy, thực hành (1h/buổi) trong suốt 21 ngày và ra kết quả ngay lập tức.</p>
+                    <ul class="list-check-green-dark">
+                        <li><strong>Cầm tay chỉ việc:</strong> Từng thao tác sử dụng công cụ AI.</li>
+                        <li><strong>Thực hành:</strong> Hướng dẫn học viên từng bước qua Zoom.</li>
+                        <li><strong>Sửa lỗi tại chỗ:</strong> Đảm bảo bám sát và hoàn thành tiến độ.</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Feature 3 -->
+            <div class="feature-row mb-xl">
+                <div class="feature-content text-left">
+                    <div class="feature-number relative-num">03</div>
+                    <h3 class="feature-title">100 NGÀY HỖ TRỢ 1:1</h3>
+                    <p class="text-gray mb-m text-m">Sau 21 ngày thực chiến, bạn vẫn có một đội ngũ chuyên gia hậu thuẫn phía sau trong suốt hơn 3 tháng tiếp theo.</p>
+                    <ul class="list-check-green-dark">
+                        <li><strong>Hỗ trợ 1:1:</strong> Qua tin nhắn bất cứ khi nào gặp khó khăn.</li>
+                        <li><strong>Review định kỳ:</strong> Chỉnh sửa bài tập sau mỗi buổi thực hành.</li>
+                        <li><strong>Update liên tục:</strong> Thuật toán & tính năng nền tảng AI mới nhất.</li>
+                    </ul>
+                </div>
+                <div class="feature-image">
+                    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&q=80" alt="Support 1:1" style="width: 100%; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); object-fit: cover; aspect-ratio: 4/3;">
+                </div>
+            </div>
 
-.grand-box { border: 2px solid var(--color-neon); border-radius: 16px; padding: 60px 40px; background: linear-gradient(180deg, rgba(242, 95, 34, 0.1) 0%, rgba(9, 16, 30, 1) 100%); width: 100%; box-shadow: inset 0 0 40px rgba(242, 95, 34, 0.05); }
+        <!-- Section: Bảng Giá Bỏ Cọc & Nhận Messenger -->
+        <section id="register" class="section-center py-xl mt-xl mb-xl card dark-card border-neon relative-card" style="max-width: 800px; margin-left: auto; margin-right: auto; padding-top: 40px; padding-bottom: 40px;">
+            <div class="badge-overlap badge-green" style="font-size: 1.2rem; top: -18px;">CHỈ DÀNH CHO NGƯỜI CAM KẾT</div>
+            <h2 class="title-large text-center mb-m uppercase line-tight" style="font-size: 2.8rem; margin-top: 20px;">
+                ĐẦU TƯ VÀO BẢN THÂN
+            </h2>
+            
+            <div class="price-box text-center mb-l">
+                <p class="text-gray text-m mb-xs">Giá trị khóa học:</p>
+                <div style="text-decoration: line-through; color: #888; font-size: 2rem; margin-bottom: 15px;">10.000.000 đ</div>
+                <p class="text-neon text-bold" style="font-size: 1.2rem; margin-bottom: 5px;"> PHÍ:</p>
+                <div class="text-neon text-bold" style="font-size: 4.5rem; text-shadow: 0 0 20px rgba(234,179,8,0.4); line-height: 1; letter-spacing: 2px;">MIỄN PHÍ</div>
+            </div>
 
-/* Nút chốt sale khẩn cấp */
-.cta-button {
-  background: linear-gradient(135deg, #F25F22 0%, #F5A623 100%);
-  color: #09101E !important; /* Chữ tối màu viền rực lửa độ tương phản tuyệt đối */
-  border: none;
-  padding: 22px 50px;
-  font-size: 1.25rem;
-  font-weight: 900; /* Dày và to bản */
-  border-radius: 8px; 
-  cursor: pointer;
-  box-shadow: 0 10px 25px rgba(242, 95, 34, 0.4);
-  transition: all 0.3s ease;
-  margin-top: 40px;
-  letter-spacing: 1.5px; /* Giãn cách chữ sang trọng */
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  text-transform: uppercase;
-}
-.cta-button:hover { transform: translateY(-3px) scale(1.03); box-shadow: 0 15px 35px rgba(242, 95, 34, 0.5); background: linear-gradient(135deg, #FF7036 0%, #FDBD36 100%); }
+            <p class="text-gray text-center max-w-700 mb-l text-m" style="font-style: italic; font-size: 1.2rem; margin-top: 30px; padding: 0 20px;">
+                "Đừng để đối thủ bỏ xa bạn trong kỷ nguyên AI. Sở hữu ngay toàn bộ hệ thống chiến lược và công cụ tự động hóa."
+            </p>
 
-/* Layout nền xen kẽ để chia section nổi bật */
-.bg-white { background-color: #0E1626; width: 100%; color: var(--color-white); padding: 60px 0;}
-.text-dark { color: var(--color-white); }
-.text-gray-light { color: var(--color-neon); }
-.text-gray-dark { color: var(--color-gray); }
-.max-w-700 { max-width: 700px; margin-left: auto; margin-right: auto; }
-.max-w-800 { max-width: 800px; margin-left: auto; margin-right: auto; }
-.line-tight { line-height: 1.2; }
-.line-h-16 { line-height: 1.6; }
-.tracking-wide { letter-spacing: 1.5px; }
-.py-xl { padding-top: 60px; padding-bottom: 60px; }
-.text-left { text-align: left; }
+            <!-- Form Web3Forms -->
+            <form action="https://api.web3forms.com/submit" method="POST" id="survey-form" style="max-width:620px; margin:30px auto 0; text-align:left;">
+                <input type="hidden" name="access_key" value="2fc07d03-0297-483d-baf8-29797f7b51b3">
+                <input type="hidden" name="subject" value="Đăng ký danh sách chờ — 21 Ngày Biến Content thành Tiền">
 
-/* Section 4: Before & After */
-.before-after-grid { display: flex; align-items: stretch; justify-content: space-between; gap: 30px; margin-top: 50px; width: 100%; }
-.before-after-grid .card { width: 45%; padding: 45px 35px; border-radius: 12px;}
-.bg-white-card { background: #162238; box-shadow: 0 15px 40px rgba(0,0,0,0.5); border: 1px solid var(--color-gray-dark); }
-.bg-green-light { background: #1E2D4A; border: 2px solid var(--color-neon); box-shadow: 0 15px 40px rgba(242, 95, 34, 0.15); }
-.relative-card { position: relative; }
-.badge-overlap { position: absolute; top: -16px; left: 40px; padding: 8px 25px; border-radius: 4px; font-size: 0.85rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; }
-.badge-gray { background: #2F4163; color: #fff; }
-.badge-green { background: linear-gradient(135deg, #F25F22 0%, #F5A623 100%); color: #09101E; box-shadow: 0 5px 20px rgba(242, 95, 34, 0.3); }
+                <!-- Câu 1: Tên -->
+                <div class="form-group">
+                    <label class="form-label">1. Tên bạn là gì? <span class="text-neon">*</span></label>
+                    <input type="text" name="ten" required placeholder="Ví dụ: Chị Hương, chị An..." class="form-input">
+                </div>
 
-.arrows-green { font-size: 50px; color: var(--color-neon); font-weight: 700; text-shadow: 0 0 20px rgba(242, 95, 34, 0.4); display: flex; align-items: center; }
+                <!-- Câu 2: Zalo -->
+                <div class="form-group">
+                    <label class="form-label">2. Số Zalo / điện thoại của bạn? <span class="text-neon">*</span></label>
+                    <input type="text" name="zalo_sdt" required placeholder="Số Zalo để tôi liên lạc..." class="form-input">
+                </div>
 
-.list-cross { list-style: none; text-align: left;}
-.list-cross li { margin-bottom: 18px; position: relative; padding-left: 45px; color: var(--color-gray); font-weight: 500;}
-.list-cross li::before { content: '×'; position: absolute; left: 0; background: #2F4163; width: 26px; height: 26px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 900; font-size: 16px; color: #9DAECA; }
+                <!-- Câu 3: Hành trình -->
+                <div class="form-group">
+                    <label class="form-label">3. Bạn đang ở đâu trong hành trình làm nội dung?</label>
+                    <div class="radio-group">
+                        <label class="radio-option"><input type="radio" name="hanh_trinh" value="Chua bat dau"> Chưa bắt đầu — chưa biết viết từ đâu</label>
+                        <label class="radio-option"><input type="radio" name="hanh_trinh" value="Da dang vai bai nhung chua co tuong tac"> Đã đăng vài bài nhưng chưa có ai tương tác</label>
+                        <label class="radio-option"><input type="radio" name="hanh_trinh" value="Co bai co nguoi xem nhung chua ra don"> Đã có bài, có người xem — nhưng chưa ra đơn</label>
+                        <label class="radio-option"><input type="radio" name="hanh_trinh" value="Khac"> Khác</label>
+                    </div>
+                </div>
 
-.list-check-green { list-style: none; text-align: left; }
-.list-check-green li { margin-bottom: 18px; position: relative; padding-left: 45px; color: var(--color-white); font-weight: 600; }
-.list-check-green li::before { content: '✓'; position: absolute; left: 0; background: var(--color-neon); width: 26px; height: 26px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 900; font-size: 16px; color: #09101E; }
+                <!-- Câu 4: Nỗi sợ -->
+                <div class="form-group">
+                    <label class="form-label">4. Điều bạn sợ nhất khi bắt đầu viết content là gì?</label>
+                    <div class="radio-group">
+                        <label class="radio-option"><input type="radio" name="noi_so" value="Khong biet viet gi"> Không biết viết gì</label>
+                        <label class="radio-option"><input type="radio" name="noi_so" value="Viet xong khong ai doc"> Viết xong không ai đọc</label>
+                        <label class="radio-option"><input type="radio" name="noi_so" value="So bi che ngai nguoi quen thay"> Sợ bị chê, ngại người quen thấy</label>
+                        <label class="radio-option"><input type="radio" name="noi_so" value="Khong co thoi gian"> Không có thời gian</label>
+                        <label class="radio-option"><input type="radio" name="noi_so" value="Khac"> Khác</label>
+                    </div>
+                </div>
 
-.bg-highlight-green { background: rgba(242, 95, 34, 0.15); color: var(--color-neon); padding: 2px 10px; border-radius: 4px; font-weight: 800; display: inline-block; }
-.underline-green { border-bottom: 2px solid var(--color-neon); font-weight: 700; }
+                <!-- Câu 5: Mong muốn -->
+                <div class="form-group">
+                    <label class="form-label">5. Nếu sau 21 ngày bạn làm được 1 điều — bạn muốn điều đó là gì?</label>
+                    <textarea name="mong_muon" rows="3" placeholder="Viết tự do — câu trả lời của bạn giúp tôi thiết kế khoá học đúng với bạn hơn..." class="form-input form-textarea"></textarea>
+                </div>
 
-/* Section 5: Roadmap Grid */
-.roadmap-grid { margin-top: 40px; }
-.roadmap-custom { position: relative; border-top: 2px solid var(--color-neon); padding-top: 50px; overflow: visible; background: var(--bg-card);}
-.roadmap-num { background: linear-gradient(135deg, #F25F22 0%, #F5A623 100%); color: #09101E; border: none; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.4rem; font-weight: 800; font-family: 'Lora', serif; position: absolute; top: -30px; left: 30px; box-shadow: 0 5px 20px rgba(242, 95, 34, 0.4); }
-.roadmap-custom p.uppercase { color: var(--color-red); font-weight: 700; }
-.roadmap-custom h3 { font-size: 1.5rem; margin-bottom: 15px; color: var(--color-white); font-weight: 700;}
+                <button type="submit" class="cta-button" style="width:100%; margin-top:10px; background:#0084FF; color: white !important; border: none; font-size:1.1rem; padding: 18px;">
+                    ĐIỀN FORM GIỮ CHỖ →
+                </button>
+                <p class="text-gray text-sm text-center mt-m">🔒 Thông tin của bạn được bảo mật tuyệt đối</p>
+            </form>
 
-.list-lightning { list-style: none; text-align: left; margin-top: 25px;}
-.list-lightning li { margin-bottom: 15px; font-size: 1rem; color: var(--color-gray); font-weight: 500;}
-.list-lightning strong { color: var(--color-white); margin-right: 5px; font-weight: 700;}
+            <!-- Thông báo sau khi gửi thành công -->
+            <div id="success-msg" style="display:none; text-align:center; margin-top:30px;">
+                <div style="font-size:3rem;">🎉</div>
+                <h3 class="text-neon" style="font-size:1.8rem; margin:15px 0;">Đăng ký thành công!</h3>
+                <p class="text-gray text-m">Cảm ơn bạn đã điền. Tôi sẽ nhắn Zalo cho bạn sớm nhất nhé!</p>
+            </div>
+      <!-- ================== KHỐI NÚT KẾT NỐI ZALO & FB 2.0 ================== -->
+<div style="margin-top: 50px; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 40px; text-align: center;">
+    <p style="color: #9DAECA; margin-bottom: 20px; font-size: 1.05rem; font-weight: 500;">
+        🎁 Bạn muốn được <span style="color: #F5A623; font-weight: 700;">Khám Kênh & Tư Vấn Lộ Trình Hoàn Toàn Miễn Phí</span>? Nhắn cho mình ngay:
+    </p>
+    
+    <div style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
+        <!-- Nút ZALO -->
+        <a href="https://zalo.me/0942755058" target="_blank" style="background: linear-gradient(135deg, #0180C7 0%, #005A9C 100%); color: white; padding: 15px 35px; border-radius: 8px; text-decoration: none; font-weight: 700; display: inline-flex; align-items: center; box-shadow: 0 5px 20px rgba(1, 128, 199, 0.4); transition: transform 0.3s; width: 230px; justify-content: center;">
+            💬 NHẮN ZALO KHÁM KÊNH
+        </a>
 
-/* Section 6: Features */
-.feature-row { display: flex; align-items: center; justify-content: space-between; gap: 60px; }
-.feature-row.reverse { flex-direction: row-reverse; }
-.feature-content { flex: 1; padding: 20px 0; }
-.feature-image { flex: 1; width: 100%;}
+        <!-- Nút FACEBOOK -->
+        <a href="https://m.me/huynhthu47" target="_blank" style="background: linear-gradient(135deg, #0866FF 0%, #054CBC 100%); color: white; padding: 15px 35px; border-radius: 8px; text-decoration: none; font-weight: 700; display: inline-flex; align-items: center; box-shadow: 0 5px 20px rgba(8, 102, 255, 0.4); transition: transform 0.3s; width: 230px; justify-content: center;">
+            📩 GỬI LINK KÊNH QUA FB
+        </a>
+    </div>
+</div>
+<!-- ================ KẾT THÚC KHỐI NÚT ZALO & FB 2.0 ================ -->
 
-.relative-num { color: #09101E; font-size: 2rem; font-weight: 800; font-family: 'Lora', serif; border: none; border-radius: 12px; transform: rotate(-3deg); width: 75px; height: 75px; display: flex; align-items: center; justify-content: center; margin-bottom: 30px; background: linear-gradient(135deg, #F25F22 0%, #F5A623 100%); box-shadow: 0 10px 25px rgba(242, 95, 34, 0.4);}
-.feature-title { font-size: 1.6rem; font-weight: 800; text-transform: uppercase; margin-bottom: 15px; letter-spacing: 0px;}
+ </section>
+    </div>
 
-.list-check-green-dark { list-style: none; text-align: left; margin-top: 25px;}
-.list-check-green-dark li { margin-bottom: 18px; position: relative; padding-left: 45px; color: var(--color-gray); font-weight: 500;}
-.list-check-green-dark li::before { content: '✓'; position: absolute; left: 0; background: var(--color-neon); width: 26px; height: 26px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 16px; color: #09101E; }
-.list-check-green-dark strong { color: var(--color-white); margin-right: 5px; font-weight: 700;}
+    <script src="script.js"></script>
+    <script>
+        // Xử lý form Web3Forms
+        const form = document.getElementById('survey-form');
+        if (form) {
+            form.addEventListener('submit', async function(e) {
+                e.preventDefault();
+                const btn = form.querySelector('button[type="submit"]');
+                const originalText = btn.textContent;
+                btn.textContent = 'Đang gửi...';
+                btn.disabled = true;
 
-/* Form Khảo Sát */
-.form-group {
-  margin-bottom: 28px;
-  width: 100%;
-}
+                const data = new FormData(form);
+                try {
+                    const response = await fetch('https://api.web3forms.com/submit', {
+                        method: 'POST',
+                        body: data,
+                        headers: { 'Accept': 'application/json' }
+                    });
+                    const result = await response.json();
 
-.form-label {
-  display: block;
-  font-size: 1.05rem;
-  font-weight: 700;
-  color: var(--color-white);
-  margin-bottom: 12px;
-  letter-spacing: 0.2px;
-}
-
-.form-input {
-  width: 100%;
-  background: #09101E; /* Match body bg */
-  border: 1px solid var(--color-gray-dark);
-  border-radius: 8px;
-  padding: 16px 20px;
-  color: var(--color-white);
-  font-size: 1rem;
-  font-family: 'Inter', sans-serif;
-  outline: none;
-  transition: border-color 0.2s ease, box-shadow 0.2s ease;
-}
-.form-input:focus {
-  border-color: var(--color-neon);
-  box-shadow: 0 0 0 3px rgba(242, 95, 34, 0.15);
-}
-.form-input::placeholder { color: #555; font-style: italic; }
-
-.form-textarea {
-  resize: vertical;
-  min-height: 100px;
-}
-
-.radio-group {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  margin-top: 5px;
-}
-
-.radio-option {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  background: #09101E;
-  border: 1px solid var(--color-gray-dark);
-  border-radius: 8px;
-  padding: 14px 18px;
-  cursor: pointer;
-  color: var(--color-gray);
-  font-size: 1rem;
-  transition: border-color 0.2s, background 0.2s;
-}
-.radio-option:hover { 
-  border-color: var(--color-neon); 
-  background: var(--bg-card); 
-}
-.radio-option input[type="radio"] { 
-  accent-color: var(--color-neon); 
-  width: 18px; 
-  height: 18px; 
-  cursor: pointer; 
-}
-.radio-option:has(input:checked) {
-  border-color: var(--color-neon);
-  background: rgba(242, 95, 34, 0.05); /* neon glow */
-  color: var(--color-white);
-  font-weight: 600;
-}
-
-@media (max-width: 768px) {
-  .hero h1 { font-size: 2.2rem; } .title-large { font-size: 2rem; } .grid-2, .grid-3 { grid-template-columns: 1fr; }
-  .effort-item { flex-direction: column; text-align: center; gap: 15px; padding: 25px 20px;}
-  .effort-item .col-left, .effort-item .col-right { text-align: center; }
-  .effort-item .col-arrow { transform: rotate(90deg); margin: 10px 0; }
-  .metrics { flex-direction: column; gap: 20px;} .grand-box { padding: 40px 20px; } .cta-button { width: 100%; padding: 20px; }
-  .before-after-grid { flex-direction: column; align-items: center;} .before-after-grid .card { width: 100%; }
-  .arrows-green { transform: rotate(90deg); margin: 10px 0; font-size: 30px;} .badge-overlap { left: 20px; }
-  .roadmap-custom { padding-top: 60px; }
-  .feature-row { flex-direction: column; text-align: center; gap: 30px;} .feature-row.reverse { flex-direction: column; }
-  .feature-content { text-align: left; } .relative-num { margin: 0 auto 20px 0; }
-}
+                    if (result.success) {
+                        form.style.display = 'none';
+                        const successMsg = document.getElementById('success-msg');
+                        successMsg.style.display = 'block';
+                        successMsg.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    } else {
+                        btn.textContent = originalText;
+                        btn.disabled = false;
+                        alert(result.errors ? result.errors.map(err => err.message).join(', ') : 'Có lỗi xảy ra. Vui lòng thử lại!');
+                    }
+                } catch (error) {
+                    btn.textContent = originalText;
+                    btn.disabled = false;
+                    alert('Lỗi kết nối. Vui lòng kiểm tra mạng và thử lại!');
+                }
+            });
+        }
+    </script>
+</body>
+</html>
