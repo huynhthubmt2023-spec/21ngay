@@ -36,14 +36,14 @@
                     <input type="text" id="cusPhone" placeholder="VD: 0901234567">
                 </div>
                 <button onclick="generateQR()" class="cta-button" style="width: 100%; margin-top: 15px; font-size: 1.1rem; padding: 18px;">
-                    TẠO MÃ QR THANH TOÁN (1.000đ)
+                    TẠO MÃ QR THANH TOÁN (5.000đ)
                 </button>
             </div>
 
             <!-- Bước hiển thị QR -->
             <div id="step-2" style="display: none;">
                 <div style="background: rgba(255,255,255,0.1); padding: 15px; border-radius: 8px; margin-bottom: 20px;">
-                    <p class="text-white font-semibold" style="font-size: 1.2rem;">Tổng thanh toán: <span class="text-neon">1.000đ</span></p>
+                    <p class="text-white font-semibold" style="font-size: 1.2rem;">Tổng thanh toán: <span class="text-neon">5.000đ</span></p>
                 </div>
                 
                 <p class="text-gray">Mở App ngân hàng và quét mã để thanh toán tự động</p>
@@ -96,7 +96,7 @@
             const shortName = removeUnsigned(name).replace(/\s+/g, '');
             const des = shortName + " " + phone + " 21ngay";
             
-            const qrUrl = `https://qr.sepay.vn/img?acc=103886879460&bank=VietinBank&amount=1000&des=${encodeURIComponent(des)}`;
+            const qrUrl = `https://qr.sepay.vn/img?acc=103886879460&bank=VietinBank&amount=5000&des=${encodeURIComponent(des)}`;
             
             document.getElementById('step-1').style.display = 'none';
             document.getElementById('step-2').style.display = 'block';
