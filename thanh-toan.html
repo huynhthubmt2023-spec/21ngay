@@ -36,14 +36,14 @@
                     <input type="text" id="cusPhone" placeholder="VD: 0901234567">
                 </div>
                 <button onclick="generateQR()" class="cta-button" style="width: 100%; margin-top: 15px; font-size: 1.1rem; padding: 18px;">
-                    TẠO MÃ QR THANH TOÁN (5.000đ)
+                    TẠO MÃ QR THANH TOÁN (499.000đ)
                 </button>
             </div>
 
             <!-- Bước hiển thị QR -->
             <div id="step-2" style="display: none;">
                 <div style="background: rgba(255,255,255,0.1); padding: 15px; border-radius: 8px; margin-bottom: 20px;">
-                    <p class="text-white font-semibold" style="font-size: 1.2rem;">Tổng thanh toán: <span class="text-neon">5.000đ</span></p>
+                    <p class="text-white font-semibold" style="font-size: 1.2rem;">Tổng thanh toán: <span class="text-neon">499.000đ</span></p>
                 </div>
                 
                 <p class="text-gray">Mở App ngân hàng và quét mã để thanh toán tự động</p>
@@ -84,7 +84,7 @@
             return str;
         }
 
-        function generateQR() {
+        async function generateQR() {
             const name = document.getElementById('cusName').value.trim();
             const phone = document.getElementById('cusPhone').value.trim();
             if(!name || !phone) {
@@ -96,12 +96,46 @@
             const shortName = removeUnsigned(name).replace(/\s+/g, '');
             const des = shortName + " " + phone + " 21ngay";
             
-            const qrUrl = `https://qr.sepay.vn/img?acc=103886879460&bank=VietinBank&amount=5000&des=${encodeURIComponent(des)}`;
+            try {
+                // Gọi tới backend để ghi nhận đơn hàng 'pending' vào brain.db
+                await fetch('http://localhost:8000/api/checkout', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ name: name, phone: phone })
+                });
+            } catch (err) {
+                console.log("Lỗi gọi API, vẫn xả mã QR cho test frontend");
+            }
+            
+            // URL của bạn, cần cập nhật đúng STK nhé
+            const qrUrl = `https://qr.sepay.vn/img?acc=103886879460&bank=VietinBank&amount=499000&des=${encodeURIComponent(des)}`;
             
             document.getElementById('step-1').style.display = 'none';
             document.getElementById('step-2').style.display = 'block';
             document.getElementById('qr-img').src = qrUrl;
             document.getElementById('transfer-desc').innerText = des;
+            
+            // Polling check order
+            const pollInterval = setInterval(async () => {
+                try {
+                    const res = await fetch('http://localhost:8000/api/check-order', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ phone: phone })
+                    });
+                    const d = await res.json();
+                    if (d.status === 'Thành công') {
+                        clearInterval(pollInterval);
+                        document.getElementById('step-2').innerHTML = `
+                            <div style="background: rgba(34,197,94,0.1); padding: 30px; border-radius: 12px; border: 1px solid #22c55e;">
+                                <h2 class="text-neon" style="color: #22c55e; margin-bottom: 10px;">Thanh toán thành công!</h2>
+                                <p class="text-gray">Cảm ơn bạn. Đơn hàng của bạn đã được xác nhận.</p>
+                                <p class="text-gray mt-m">Vui lòng kiểm tra email để nhận thông tin vào học.</p>
+                            </div>
+                        `;
+                    }
+                } catch(e) {}
+            }, 3000);
         }
     </script>
 </body>
